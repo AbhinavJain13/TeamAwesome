@@ -1,0 +1,6 @@
+class UsersController < ApplicationController
+
+def index
+  @stream = client.user_timeline("icambron")
+end
+end
