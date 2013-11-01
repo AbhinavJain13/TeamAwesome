@@ -1,5 +1,8 @@
 TeamAwesome::Application.routes.draw do
+  resources :streams
   resources :users
+  post '/users/add_user'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -15,7 +18,7 @@ TeamAwesome::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
+ 0 #   resources :products do
   #     member do
   #       get 'short'
   #       post 'toggle'

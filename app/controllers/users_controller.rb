@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-
-def index
-  @stream = Twitter.user_timeline("uiowa")
-  @current_user = Twitter.user
-end
+  def add_user
+    User.create_user(params[:user])
+  end
 end
