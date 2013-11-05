@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.14'
 gem 'twitter'
 gem "haml", '4.0.3'
-
+gem 'twitter-text'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
