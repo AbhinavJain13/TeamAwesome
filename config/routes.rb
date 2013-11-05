@@ -1,6 +1,7 @@
 TeamAwesome::Application.routes.draw do
   resources :streams
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   post '/users/add_user'
 
   # The priority is based upon order of creation:

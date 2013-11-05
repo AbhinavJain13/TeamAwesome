@@ -17,6 +17,8 @@ group :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'ZenTest'
+  gem 'bcrypt-ruby', '3.0.1'
+  
 end
 group :production do
   gem 'pg'
