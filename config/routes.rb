@@ -1,10 +1,11 @@
 TeamAwesome::Application.routes.draw do
+  resources :streams
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup', to: 'users#new'
   match '/login', to: 'session#new'
   match '/logout', to: 'sessions#destroy', via: :delete
-  resources :streams
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -20,7 +21,7 @@ TeamAwesome::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
+ 0 #   resources :products do
   #     member do
   #       get 'short'
   #       post 'toggle'

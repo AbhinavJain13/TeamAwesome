@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+require 'bcrypt'
+
+class User < ActiveRecord::Base
+  include BCrypt
+=======
 #require 'bcrypt'
 
 class User < ActiveRecord::Base
   #include BCrypt
+>>>>>>> develop
 
   attr_accessible :name, :email, :password, :password_confirmation
   has_secure_password

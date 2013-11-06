@@ -173,10 +173,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-
+<<<<<<< HEAD
+  bcrypt-ruby (= 3.0.1)
+=======
   ZenTest
   bcrypt-ruby (= 3.0.1)
   capybara
+>>>>>>> develop
   coffee-rails (~> 3.2.1)
   cucumber-rails
   cucumber-rails-training-wheels

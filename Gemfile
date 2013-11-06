@@ -11,6 +11,16 @@ gem 'bcrypt-ruby', '3.0.1'
 group :development, :test do
   gem 'sqlite3'
 end
+group :test do
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem 'ZenTest'
+  gem 'bcrypt-ruby', '3.0.1'
+  
+end
 group :production do
   gem 'pg'
 end
