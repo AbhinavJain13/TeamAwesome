@@ -1,5 +1,10 @@
 TeamAwesome::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signup', to: 'users#new'
+  match '/login', to: 'session#new'
+  match '/logout', to: 'sessions#destroy', via: :delete
+  resources :streams
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
