@@ -6,16 +6,15 @@
 <head>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
+    <div class="nav-collapse" align="left"><a href= logout_path>Logout</a></div>
     <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="http://www.twitter.com/teamawesomeselt">Team Awesome</a>
+      
+
+      <a class="brand" href="http://www.twitter.com/<%= @current_user.screen_name%>" + ><%= @current_user.name%></a>
       <div class="nav-collapse">
 	
         <ul class="nav">
+
           <li><%= link_to "Twitter", "http://www.twitter.com" %></li>
           <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
           <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
@@ -25,6 +24,7 @@
 	
       </div>
       <div class="nav-collapse" align="right"><%= image_tag("compose.jpg", :alt => "Compose Tweet") %></div>
+      
     </div>
   </div>
 </div>
