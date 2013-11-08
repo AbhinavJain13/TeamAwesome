@@ -9,16 +9,10 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       #sign in and redirect to show page
       session[:session_token]=user.session_token
-<<<<<<< HEAD
       @current_user = user
-      redirect_to streams
-=======
       redirect_to streams_path
->>>>>>> develop
     else
-      #puts "HASDHASDASD"
-      flash[:warning] = 'Invalid email/password combination'
-      #flash[:warning] = 'Invalid email/password combination'				
+      flash[:warning] = 'Invalid email/password combination'				
       render 'new'
     end
   end

@@ -11,13 +11,9 @@ class SessionsController < ApplicationController
       session[:session_token]=user.session_token
 <<<<<<< HEAD
       @current_user = user
-<<<<<<< HEAD
       redirect_to streams
 =======
-      redirect_to user
->>>>>>> develop
-=======
-      redirect_to streams_path and return
+      redirect_to streams_path
 >>>>>>> develop
     else
       #puts "HASDHASDASD"
@@ -29,15 +25,9 @@ class SessionsController < ApplicationController
   
   def destroy
     session[:session_token]=nil
-<<<<<<< HEAD
-    @current_user = nil
-    flash[:notice]='Goodbye!'
-    redirect_to users_path
-=======
     @current_user=nil
     flash[:notice]='You have logged out'
     redirect_to login_path
->>>>>>> develop
   end
 
 end

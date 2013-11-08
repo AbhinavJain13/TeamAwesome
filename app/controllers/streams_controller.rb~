@@ -1,29 +1,17 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 require 'twitter-text'
 include Twitter::Autolink
 
->>>>>>> 117e4544057b9a0645254ff7eeacddd83da65f8f
-class StreamsController < ApplicationController
-
-def index
-  @stream = Twitter.user_timeline("uiowa")
-  @current_user = Twitter.user
-end
-<<<<<<< HEAD
-=======
-def new
-end
->>>>>>> 117e4544057b9a0645254ff7eeacddd83da65f8f
-=======
 class StreamsController < ApplicationController
 
 before_filter :set_current_user
+@current_twitter_user = Twitter.user
 
 def index
   @stream = Twitter.user_timeline("uiowa")
-  #@current_user = Twitter.user
 end
->>>>>>> develop
+
+def new
+  #@current_twitter_user = Twitter.user
+end
+
 end

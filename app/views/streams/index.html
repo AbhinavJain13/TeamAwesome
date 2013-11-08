@@ -4,7 +4,7 @@
 <b>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
 Here is your twitter stream- </b>
 <br>
-<table border =2>
+<table class="table" border =2>
 <% @stream.each do |tweet| %>
 
   <tr>
@@ -13,7 +13,11 @@ Here is your twitter stream- </b>
       <!--<td><%= tweet.retweeters_count %></td> !-->
       <td><%= tweet.from_user%></td>
       
-      
+      <table>
+        <td><% image_tag("reply.png", :alt => "Reply") %>Reply</td>
+        <td><% image_tag("favorite.png", :alt => "Favorite") %>Favorite</td>
+        <td><% image_tag("retweet.png", :alt => "Retweet") %>Retweet</td>
+      </table>
   </tr>
   
 <% end %>
