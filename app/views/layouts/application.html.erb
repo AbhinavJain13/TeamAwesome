@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Team Awesome</title>
+</head>
+<body>
 <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-<head>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="nav-collapse" align="left"><a href= logout_path>Logout</a></div>
@@ -18,8 +21,15 @@
           <li><%= link_to "Twitter", "http://www.twitter.com" %></li>
           <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
           <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
+<<<<<<< HEAD
           <li><%= link_to "Retweets Of Me", new_stream_path %></li>
 	  
+=======
+           <% if @current_user -%>
+          <li>Welcome, <%= @current_user.name %></li>
+          <li><%= button_to 'Logout', logout_path, :method=>:delete %></li>
+           <% end -%>
+>>>>>>> develop
         </ul>
 	
       </div>
@@ -28,6 +38,7 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD
   <title>TeamAwesome</title>
 
 </head>
@@ -45,5 +56,10 @@ You can drop us a mail at: <br>
       </div>
     </div>
   </div>
+=======
+
+<%= yield %>
+
+>>>>>>> develop
 </body>
 </html>

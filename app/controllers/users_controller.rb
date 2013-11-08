@@ -2,20 +2,18 @@ class UsersController < ApplicationController
 
   before_filter :set_current_user, :only=>['show','edit','update','delete'] 
  
-  def create
+  def new
+    #default - render 'new' template
+  end
 
-    @user_params = params[:user]
-    if (@user_params[:name] == '' || @user_params[:password] == '' || @user_params[:password_confirmation] == '' || @user_params[:email] == '')
-       flash[:notice] = 'Please fill out each field of the form.'    
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      flash[:notice] = 'Welcome!'
+      session[:session_token]=@user.session_token
+      redirect_to streams_path 
     else
-       @user = User.new(params[:user])
-       if @user.save
-         flash[:notice] = 'Welcome!'
-         redirect_to streams_path 
-       else
-         flash[:notice] = 'There was an error creating your account.'
-       end
-       
+      render 'new'
     end
   end
 end
