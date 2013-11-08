@@ -21,7 +21,7 @@ TeamAwesome::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
- 0 #   resources :products do
+  #   resources :products do
   #     member do
   #       get 'short'
   #       post 'toggle'

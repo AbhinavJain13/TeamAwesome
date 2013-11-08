@@ -10,7 +10,7 @@
     <div class="container">
       
 
-      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user.screen_name%>" + ><%= @current_twitter_user.name%></a>
+      <a class="brand" href="http://www.twitter.com/<%= @current_user.screen_name%>" + ><%= @current_user.name%></a>
       <div class="nav-collapse">
 	
         <ul class="nav">

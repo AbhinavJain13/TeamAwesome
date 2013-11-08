@@ -4,12 +4,16 @@ gem 'rails', '3.2.14'
 gem 'twitter'
 gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
-
+gem 'twitter-text'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
 end
 group :test do
   gem 'cucumber-rails'
@@ -23,6 +27,10 @@ group :test do
 end
 group :production do
   gem 'pg'
+end
+group :test do
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
 end
 
 # Gems used only for assets and not required

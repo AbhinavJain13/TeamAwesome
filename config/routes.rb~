@@ -6,7 +6,6 @@ TeamAwesome::Application.routes.draw do
   match '/login', to: 'session#new'
   match '/logout', to: 'sessions#destroy', via: :delete
 
->>>>>>> develop
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
