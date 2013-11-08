@@ -1,4 +1,7 @@
-%h1 Welcome to Team Awesome Twitter Manager
+
+%br
+%br
+%h2 Sign-up
 
 -unless @user ==nil
   -if @user.errors.any?
