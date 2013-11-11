@@ -14,6 +14,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 group :test do
   gem 'cucumber-rails'

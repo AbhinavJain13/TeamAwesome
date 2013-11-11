@@ -58,5 +58,19 @@ describe SessionsController do
         post :create, {:session => {:email => 'email@address.com', :password=>'wrongPass'}}
       end
     end
+    describe 'session destroy invoked' do
+      it 'session token should be cleared' do
+        assigns[session[:session_token]].should == nil
+        delete :destroy
+      end
+      it 'current user should be set to nil' do 
+        assigns[@current_user].should == nil
+        delete :destroy
+      end
+      it 'display flash message indicating logout' do
+        assigns[flash[:notice]].should == 'You have logged out'
+        delete :destroy
+      end
+    end
   end
 end
