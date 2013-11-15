@@ -8,15 +8,15 @@
 
   <tr>
       <td><img src = " <%= tweet.user.profile_image_url %> " ></td></img>
-      <td><%= tweet.full_text %></td>
+      <td><%= auto_link(tweet.full_text).html_safe %>
       <!--<td><%= tweet.retweeters_count %></td> !-->
-      <td><%= tweet.from_user%></td>
       
       <table>
         <td><% image_tag("reply.png", :alt => "Reply") %>Reply</td>
         <td><% image_tag("favorite.png", :alt => "Favorite") %>Favorite</td>
         <td><% image_tag("retweet.png", :alt => "Retweet") %>Retweet</td>
-      </table>
+      </table></td>
+      <td><% auto_link("@"+tweet.from_user).html_safe %></td>
   </tr>
   
 <% end %>

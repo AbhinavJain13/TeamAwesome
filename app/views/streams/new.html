@@ -12,9 +12,9 @@
       <!--<td><%= tweet.retweeters_count %></td> !-->
       
       <table>
-        <td><% image_tag("reply.png", :alt => "Reply") %>Reply</td>
-        <td><% image_tag("favorite.png", :alt => "Favorite") %>Favorite</td>
-        <td><% image_tag("retweet.png", :alt => "Retweet") %>Retweet</td>
+        <td><%= image_tag("reply.png", :alt => "Reply") %>Reply</td>
+        <td><%= image_tag("favorite.png", :alt => "Favorite") %>Favorite</td>
+        <td><%= image_tag("retweet.png", :alt => "Retweet") %>Retweet</td>
       </table></td>
       <td><% auto_link("@"+tweet.from_user).html_safe %></td>
   </tr>
