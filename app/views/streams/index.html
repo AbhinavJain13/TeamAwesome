@@ -1,25 +1,62 @@
 <html>
-<h2>Details about us</h2>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  var reply={
 
-<b>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
-Here is your twitter stream- </b>
+  setup: function(){
+    var replyBox = '<tr id="replyBox"><td></td><td><form method="post" action="#"><textarea class="field span7" id="textarea" rows="3" placeholder="Enter a short synopsis"></textarea><br><input type="submit" value="Reply" class="btn btn-primary btn-small"></form></td></tr>';
+    //$(replyBox).appendTo($('body')).hide();
+    $('td.replies').click(function(){
+      console.log($(this).parent());
+      $(replyBox).insertAfter($(this).parent());
+      //var oneFourth = Math.ceil($(window).width() / 4);
+      //  $('.replyBox').css({'left': oneFourth,  'width': 2*oneFourth, 'top': 250,}).show();
+      //  $(window).print("Hello");
+
+      
+    });
+
+
+  }
+}
+$(reply.setup);
+
+
+</script>
+
+<%= javascript_include_tag('application') %>
+
+<h2>Details about us</h2>
+<body>
+
+<strong>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
+Here is your twitter stream- </strong>
 <br>
 <table class="table" border =2>
-<% @stream.each do |tweet| %>
-
-  <tr>
-      <td><img src = " <%= tweet.user.profile_image_url %> " ></td></img>
-      <td><%= tweet.full_text %></td>
+  <% @stream.each do |tweet| %>
+    <tr class="tweetBox">
+       <table class="table">
+          <tr>
+            <td width="40"><img src = " <%= tweet.user.profile_image_url %> " ></img></td>
+            <td><%= auto_link(tweet.full_text).html_safe %></td>
+          </tr>
       <!--<td><%= tweet.retweeters_count %></td> !-->
-      <td><%= tweet.from_user%></td>
       
-      <table>
-        <td><%= image_tag("reply.png", :alt => "Reply") %>Reply</td>
-        <td><%= image_tag("favorite.png", :alt => "Favorite") %>Favorite</td>
-        <td><%= image_tag("retweet.png", :alt => "Retweet") %>Retweet</td>
-      </table>
-  </tr>
+          <tr class="basicFunctions">
+           <td></td>
+           <td class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a>
+            <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
+            <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
+           </td>
+          </tr>
+        </table>
+      <!--<td><% auto_link("@"+tweet.from_user).html_safe %></td>!-->
+    </tr>
   
-<% end %>
+  <% end %>
 </table>
-<html>
+
+
+</body>
+</html>
