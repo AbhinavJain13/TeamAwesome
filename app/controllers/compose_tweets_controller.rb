@@ -8,7 +8,6 @@ before_filter :set_current_user
   end
 
   def create
-    #@current_twitter_user = Twitter.user
     @tweet_text = params[:compose_tweet][:text]
     if @tweet_text.length > 0 
       @tweet = Twitter.update(params[:compose_tweet][:text])

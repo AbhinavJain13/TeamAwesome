@@ -3,6 +3,7 @@ class ComposeTweetsController < ApplicationController
 before_filter :set_current_user
 
   def new
+    render :partial=>'compose_tweet' and return if request.xhr?
     @current_twitter_user = Twitter.user
   end
 
