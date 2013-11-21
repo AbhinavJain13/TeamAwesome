@@ -1,8 +1,0 @@
-  console.log('compose tweet js recognized');
-  $('#compose_tweet').innerHTML = '<img src="compose.jpg", alt="compose tweet" />';
-  $('#compose_tweet').click(function(){
-    console.log('compose tweet clicked');
-  };
-
-
-

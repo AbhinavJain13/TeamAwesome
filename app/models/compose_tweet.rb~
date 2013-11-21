@@ -1,6 +1,0 @@
-class ComposeTweet < ActiveRecord::Base
-
-  def self.create_compose_tweet (id, text, author)
-    ComposeTweet.create(:id=>id, :text=>text, :author=>author)
-  end
-end
