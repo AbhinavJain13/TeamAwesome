@@ -23,13 +23,14 @@
           <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
           <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
           <li><%= link_to "Retweets Of Me", new_stream_path %></li>
+          <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
           <li><%= link_to "Home", streams_path %></li>
           <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
           <li>Welcome, <%= @current_user.name %></li>
         </ul>
 	
       </div>
-      <div class="nav-collapse" align="right" id="compose_tweet"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet"), new_compose_tweet_path, :method=>:get %></div>
+      <div class="nav-collapse" align="right" id="compose_tweet"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet"), new_compose_tweet_path, :method=>:get, :html=>{:id=>"compose_tweet_trigger"} %></div>
       
     </div>
   </div>
