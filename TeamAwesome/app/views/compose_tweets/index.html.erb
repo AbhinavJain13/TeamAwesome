@@ -1,0 +1,18 @@
+<h2>Tweets from my Twitter Account</h2>
+<br/>
+
+<table class="table" border =2>
+<% @timeline.each do |tweet| %>
+  <tr>
+      <td><img src = " <%= tweet.user.profile_image_url %> " /></td>
+      <td><%= auto_link(tweet.full_text).html_safe %></td>
+      <% @compose_tweet.each do |compose| %>
+        <% if (compose.id == tweet.id) %>
+          <% @author=compose.author %>
+        <% end %>
+      <% end %>
+      <td>Author: <%= @author %></td>
+      <% @author="?" %>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,12 @@
+%br
+%br
+%h2 Compose Tweet
+
+- if flash[:notice]
+  #notice.message= flash[:notice]
+
+=form_tag compose_tweets_path, :method=>:post do
+  =text_area :compose_tweet, 'text', :maxlength=>'140', :rows=>'6'
+  %br
+  =submit_tag 'Tweet'
+

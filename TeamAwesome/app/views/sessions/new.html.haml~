@@ -1,0 +1,32 @@
+
+  %head
+    %title Team Awesome
+
+%body    
+  %br
+  %br
+  %h2 Sign-in
+
+  #main
+    -if flash[:notice]
+      #notice.message= flash[:notice]
+    -elsif flash[:warning]
+      #warning.message= flash[:warning]
+    = yield
+  %br
+
+  =form_tag sessions_path do
+    
+    =label :session, :email, 'Email'
+    =text_field :session, 'email'
+
+    =label :session, :password, 'Password'
+    =password_field :session, 'password'
+    %br
+    =submit_tag 'Sign in'
+
+  =link_to 'Create new account', new_user_path
+
+
+
+    

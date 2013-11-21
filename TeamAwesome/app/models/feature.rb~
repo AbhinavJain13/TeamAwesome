@@ -1,0 +1,8 @@
+class Feature < ActiveRecord::Base
+
+  attr_accessible :tweet_id
+  def set_nice
+    Feature.find_all(:
+  end
+
+end
