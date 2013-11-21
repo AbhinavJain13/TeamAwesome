@@ -2,8 +2,9 @@ TeamAwesome::Application.routes.draw do
   resources :streams
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :compose_tweet
   match '/signup', to: 'users#new'
-  match '/login', to: 'session#new'
+  match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:

@@ -28,7 +28,7 @@
         </ul>
 	
       </div>
-      <div class="nav-collapse" align="right"><%= image_tag("compose.jpg", :alt => "Compose Tweet") %></div>
+      <div class="nav-collapse" align="right"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet"), new_compose_tweet_path, :method=>:get %></div>
       
     </div>
   </div>

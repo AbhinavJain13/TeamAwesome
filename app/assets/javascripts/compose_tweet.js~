@@ -1,0 +1,8 @@
+$(document).ready(function(){
+  console.log('compose tweet js recognized');
+  $('#compose_tweet').html('<%= image_tag("compose.jpg", :alt => "Compose Tweet") %>').click(function(){
+    console.log('compose tweet clicked');
+  });
+});
+
+

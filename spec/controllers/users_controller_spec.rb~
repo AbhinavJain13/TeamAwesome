@@ -13,7 +13,7 @@ describe UsersController do
       fake_data = {:user=>{'name'=>'Miles Magoo', 'email'=>'magoo@email.com', 'password'=>'horse44', 'password_confirmation'=>'horse44'}}
       fake_obj = double()
       User.should_receive(:new).with(fake_data[:user]).and_return(fake_obj)
-      fake_obj.should_receive(:save).with().and_return('true')
+      fake_obj.should_receive(:save).and_return('true')
       flash[:notice].should == 'Welcome!'
       post :create, fake_data
     end
