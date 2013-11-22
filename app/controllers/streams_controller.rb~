@@ -15,7 +15,7 @@ end
 def new
   @stream = Twitter.user_timeline(session[:screen_name])
   @current_twitter_user = Twitter.user
-  @myrt = Twitter.user("uiowa").retweets_of_me()
+  @myrt = Twitter.retweets_of_me()
 end
 
 end
