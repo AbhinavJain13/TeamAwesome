@@ -12,19 +12,24 @@
   setup: function(){
     var replyBox = '<tr class="tab-pane active fade in" id="replyBox"><td></td><td><form method="post" action="#"><textarea class="field span7" id="textarea" rows="3" placeholder="Enter a short synopsis"></textarea><br><input type="submit" value="Reply" class="btn btn-primary btn-small"></form><div class="Close" align="center"><a href="#">Close</a></div></td></tr>';
     //$(replyBox).appendTo($('body')).hide();
-    $('td.replies').click(function(){
-      console.log($(this).parent());
-      $(replyBox).insertAfter($(this).parent());
-      $(reply.closeBox);
-      //var oneFourth = Math.ceil($(window).width() / 4);
-      //  $('.replyBox').css({'left': oneFourth,  'width': 2*oneFourth, 'top': 250,}).show();
-      //  $(window).print("Hello");
-
-      
+    $('.replies').click(function(){
+      //console.log($(this).parent().parent());
+      var a = document.getElementById("replyBox");
+      if(a==null){
+        $(replyBox).insertAfter($(this).parent().parent());
+        $(reply.closeBox);
+        }
+    
     });
+    $(reply.nice);
 
 
-  }
+  },
+  nice: function(){
+    $(".nice").click(function(){
+      alert("Hello");
+      })
+    }
 }
 $(reply.setup);
 
@@ -52,10 +57,10 @@ Here is your twitter stream- </strong>
       
           <tr class="basicFunctions">
            <td></td>
-           <td class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a>
+           <td><span class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a></span>
             <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
             <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
-            <%= image_tag("nice.png", :alt => "Nice One", :size => "16x16") %>Nice!
+            <span class="nice"><a href="#"><%= image_tag("nice.png", :alt => "Nice One", :size => "16x16") %>Nice!</a></span>
            </td>
           </tr>
         </table>
