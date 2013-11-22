@@ -6,7 +6,8 @@ TeamAwesome::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
-  resources :features
+  resources :nfeatures
+  match '/nice', to: 'nfeatures#indedx', via: [:get, :post]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

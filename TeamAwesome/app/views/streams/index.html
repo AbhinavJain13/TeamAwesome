@@ -25,7 +25,7 @@
 
 
   },
-  nice: function(){
+  /*nice: function(){
     $(".nice").click(function(){
       //alert("Hello");
       $.ajax({type: 'POST',
@@ -73,7 +73,7 @@ Here is your twitter stream- </strong>
            <td><span class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a></span>
             <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
             <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
-            <span class="nice" ><a href="#"><%= image_tag("nice.png", :alt => "Nice One", :size => "16x16") %>Nice!</a></span>
+            <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
            </td>
           </tr>
         </table>

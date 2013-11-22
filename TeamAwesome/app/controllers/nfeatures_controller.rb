@@ -2,8 +2,8 @@ class NfeaturesController < ApplicationController
 
 before_filter :set_current_user
 
-def index
-  @nice_value = Feature.nice(params)
+def create
+  @nice = params[:tweetid]
 end
 
 def new

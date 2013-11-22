@@ -2,7 +2,7 @@ class Nfeature < ActiveRecord::Base
 
   attr_accessible :tweet_id
   def set_nice
-    Feature.find_all(:tweet_id => params[0], :nice => true);
+    Nfeature.find_all(:tweet_id => params[0], :nice => true);
   end
 
 end
