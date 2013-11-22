@@ -1,6 +1,8 @@
 class ComposeTweet < ActiveRecord::Base
-
-  def self.create_compose_tweet (id, text, author)
-    ComposeTweet.create(:id=>id, :text=>text, :author=>author)
+  attr_accessible :id, :text, :author
+  
+  def self.create_compose_tweet (tweet_text, author)
+    @tweet = Twitter.update(tweet_text)
+    ComposeTweet.create(:id=>@tweet.id, :text=>@tweet.text, :author=>author)
   end
 end

@@ -8,16 +8,16 @@ before_filter :set_current_user
   end
 
   def create
-    @yellow = "yellow"
-    #@tweet_text = params[:compose_tweet][:text]
-    #if @tweet_text.length > 0 
-    #  @tweet = Twitter.update(params[:compose_tweet][:text])
-    #  ComposeTweet.create_compose_tweet(@tweet.id, @tweet.text, @current_user.name)
-    #  redirect_to streams_path 
-    #else 
-    #  flash[:notice] = 'Please compose a tweet between 1 and 140 characters'
-    #  redirect_to new_compose_tweet_path
-    #end
+    @tweet_text = params[:compose_tweet][:text]
+    if @tweet_text.length > 0 
+      #@tweet = Twitter.update(params[:compose_tweet][:text])
+      #ComposeTweet.create_compose_tweet(@tweet.id, @tweet.text, @current_user.name)
+      ComposeTweet.create_compose_tweet(@tweet_text, @current_user.name)
+      redirect_to streams_path 
+    else 
+      flash[:notice] = 'Please compose a tweet between 1 and 140 characters'
+      redirect_to new_compose_tweet_path
+    end
   end
 
   def index
