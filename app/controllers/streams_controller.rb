@@ -13,9 +13,9 @@ def index
 end
 
 def new
-  @stream = client.user_timeline(session[:screen_name])
-  @current_twitter_user = Twitter.user
-  @myrt = client.retweets_of_me()
+  @stream = Twitter.user_timeline("uiowa")
+  @current_twitter_user = session[:screen_name]
+  @myrt = Twitter.retweets_of_me()
 end
 
 end

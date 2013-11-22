@@ -25,7 +25,7 @@
           <li><%= link_to "Home", streams_path %></li>
           <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
           <li>Welcome, <%= @current_user.name %></li>
-          <li>Your Twitter account is <%= @current_twitter_user %></li>
+          <li>Twitter account: <%= @current_twitter_user %></li>
         </ul>
 	
      
