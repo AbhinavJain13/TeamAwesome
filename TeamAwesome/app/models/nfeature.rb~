@@ -1,17 +1,35 @@
 class Nfeature < ActiveRecord::Base
+  
+
 
   attr_accessible :tweetid, :isnice
-  def self.set_nice params
-    @nicevalue = Nfeature.where(:tweetid => params, :isnice => false)
-    return @nicevalue
+  def self.set_nice params, cuser
+    @nicevalue = Nfeature.where(:tweetid => params)
+
 
     if !@nicevalue.empty?
-      Nfeature.create({:tweetid=> params, :isnice=> true}, :without_protection => true)
-      
+	if @nicevalue.where(:isnice => true)
+      	  Nfeature.where(:tweetid => params, :isnice => true).update_all(:isnice=>false)
+        elsif @nicevalue.where(:isnice => false)
+     	  Nfeature.where(:tweetid => params, :isnice => false).update_all(:isnice=>true)
+	end
     else
-      Nfeature.where(:tweetid => params, :isnice => false).update_all(:isnice=>true)
-      redirect_to "http://www.fb.com"
+      Nfeature.create({:tweetid=> params, :isnice => true, name: cuser}, :without_protection => true)
     end
+   
 
+  end
+  def self.get_nice
+    @stream = Hash.new
+    @stream[:tweets] = Array.new
+    @stream[:uname]= Array.new
+    @true_id = Nfeature.where(:isnice=>true)
+    @true_id.each do |tid|
+      #@tweet_ids = tid[:tweetid]
+      @stream[:tweets].push Twitter.status(tid[:tweetid])
+      @stream[:uname].push tid[:name]
+    end
+    return @stream
+    
   end
 end

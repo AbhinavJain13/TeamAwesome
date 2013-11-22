@@ -14,7 +14,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user.screen_name%>" + ><%= @current_twitter_user.screen_name%></a>
+      
       <div class="nav-collapse">
 	
         <ul class="nav">
@@ -23,9 +23,10 @@
           <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
           <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
           <li><%= link_to "Retweets Of Me", new_stream_path %></li>
-          <li><%= link_to "Authored Tweets", compose_tweets_path</li>
+          <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
           <li><%= link_to "Home", streams_path %></li>
           <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
+	  <li><%= link_to "Nice Tweets", nfeatures_path%></li>
           <li>Welcome, <%= @current_user.name %></li>
         </ul>
 	

@@ -8,6 +8,7 @@ before_filter :set_current_user
 def index
   @stream = Twitter.home_timeline
   @current_twitter_user = Twitter.user
+  @randomtweet = Twitter.status(403674450089885696)
 end
 
 def new

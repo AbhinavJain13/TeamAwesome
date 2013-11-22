@@ -21,11 +21,11 @@
         }
     
     });
-    $(reply.nice);
+    //$(reply.nice);
 
 
-  },
-  nice: function(){
+  }
+  /*nice: function(){
     $(".nice").click(function(){
       //alert("Hello");
       $.ajax({type: 'POST',
@@ -41,7 +41,7 @@
     changeColor: function(){
 
       alert("Color changed");
-    }
+    }*/
 }
 $(reply.setup);
 
@@ -50,7 +50,7 @@ $(reply.setup);
 
 <%= javascript_include_tag('application') %>
 
-<h2>Details about us</h2>
+<h2>Details about us </h2>
 <body>
 
 <strong>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
@@ -64,7 +64,7 @@ Here is your twitter stream- </strong>
             <td width="40"><img src = " <%= tweet.user.profile_image_url %> " ></img></td>
             <td><%= auto_link(tweet.full_text).html_safe %></td>
             <!--<td><%= tweet.in_reply_to_screen_name %></td>!-->
-            <td> <%= tweet.id %></td>
+           
           </tr>
       <!--<td><%= tweet.retweeters_count %></td> !-->
       
@@ -73,7 +73,7 @@ Here is your twitter stream- </strong>
            <td><span class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a></span>
             <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
             <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
-            <span class="nice" ><a href="#"><%= image_tag("nice.png", :alt => "Nice One", :size => "16x16") %>Nice!</a></span>
+            <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
            </td>
           </tr>
         </table>
