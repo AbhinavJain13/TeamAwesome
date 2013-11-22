@@ -3,7 +3,7 @@ class NfeaturesController < ApplicationController
 before_filter :set_current_user
 
 def create
-  @nice = params[:tweetid]
+  @nice = Nfeature.set_nice(params[:tweetid])
 end
 
 def new
