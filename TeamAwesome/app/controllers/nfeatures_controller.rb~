@@ -1,10 +1,13 @@
+require 'twitter-text'
+include Twitter::Autolink
+
 class NfeaturesController < ApplicationController
 
 before_filter :set_current_user
 
 def create
   @nice = Nfeature.set_nice(params[:tweetid], @current_user)
-  redirect_to streams_path
+  redirect_to "www.google.com"#streams_path
 end
 def index
   @output = Nfeature.get_nice

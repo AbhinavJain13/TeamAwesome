@@ -32,4 +32,8 @@ class Nfeature < ActiveRecord::Base
     return @stream
     
   end
+  #NHP
+  def self.set_note params cuser
+      @notevalue=Nfeature.where(:tweetid => params)
+  end
 end
