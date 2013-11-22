@@ -17,4 +17,8 @@ def new
   @myrt = Twitter.retweets_of_me()
 end
 
+def create
+    redirect new_streams_path
+
+end
 end

@@ -33,6 +33,9 @@ class Nfeature < ActiveRecord::Base
     
   end
   #NHP
-  def self.set_note params cuser
-      @notevalue=Nfeature.where(:tweetid => params)
+  def self.set_note params, cuser 
+      @notevalue=Nfeature.new(:tweetid => params, :notecontent => params)
+     end
+      
+ 
 end

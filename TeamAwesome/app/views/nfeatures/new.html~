@@ -1,0 +1,6 @@
+<html>
+<body>
+<p1><%= @notevalue   %> </p1>
+<p2>new page </p2>
+</body>
+</html>

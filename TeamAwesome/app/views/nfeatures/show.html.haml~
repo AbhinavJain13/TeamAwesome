@@ -1,0 +1,11 @@
+%h1 Add note to selected tweet
+
+= form_tag new_nfeature_path, :method=> :post do
+
+  = label :note, :name, 'Name'
+  = text_field :note, 'name'
+
+  = label :note, :notecontent, 'Note'
+  = text_area :note, 'notecontent' 
+ 
+  = submit_tag 'Create Note' 

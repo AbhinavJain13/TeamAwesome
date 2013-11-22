@@ -10,14 +10,23 @@ def create
   redirect_to streams_path
 end
 def index
-  @output = Nfeature.get_nice
-  @stream = @output[:tweets]
-  @uname = @output[:uname]
+  #@output = Nfeature.get_nice
+  #@stream = @output[:tweets]
+    redirect_to "http://www.fb.com"
+#@uname = @output[:uname]
 end
 def new
-  @stream = Twitter.user_timeline("uiowa")
-  @current_twitter_user = Twitter.user
-  @myrt = Twitter.retweets_of_me()
+  
+
+  
+  #@stream = Twitter.user_timeline("uiowa")
+  #@current_twitter_user = Twitter.user
+  #@myrt = Twitter.retweets_of_me()
+  
+end
+
+def show
+
 end
 
 end
