@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       #sign in and redirect to show page
       session[:session_token]=user.session_token
       @current_user = user
-      redirect_to streams_path
+      #redirect_to streams_path
     else
       flash[:warning] = 'Invalid email/password combination'				
       render 'new'
@@ -23,6 +23,36 @@ class SessionsController < ApplicationController
     flash[:notice]='You have logged out'
     redirect_to login_path
   end
+
+  def twitter_create
+    @auth = request.env["omniauth.auth"]
+    client = Twitter::Client.new(oauth_token: @auth["oauth_token"], oauth_token_secret: @auth["oauth_token_secret"], screen_name: @auth["info"]["nickname"])
+    client.user(@auth["info"]["nickname"])
+    session[:screen_name] = @auth["info"]["nickname"]
+    return client 
+
+    #@test = session[:screen_name]
+    #return @test
+
+    #session[:oauth_token_secret] = @auth["oauth_token_secret"]
+    #@current_user.twitterName = @auth["screen_name"]
+    
+    
+    #user = User.find_by_provider_and_uid(auth["provider"], auth["uid"])  
+    #redirect_to streams_path
+  end
+
+  def twitter_destroy
+    flash[:notice]='You have logged out of Twitter'
+    #@current_user = User.find_by_session_token(session[:session_token])
+    #@current_user.uid = '';
+    #@current_user.twitterName = '';
+    redirect_to streams_path
+  end
+
+
+
+  
 
 end
 

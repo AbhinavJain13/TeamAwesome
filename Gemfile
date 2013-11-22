@@ -15,6 +15,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
+  gem 'omniauth-twitter'
+  gem 'omniauth-github'
 end
 group :test do
   gem 'cucumber-rails'
