@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Team Awesome</title>
+</head>
+<body>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+
+<% if @current_user -%>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+      
+      <div class="nav-collapse">
+
+      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user %></a>
+      
+
+	
+        <ul class="nav">
+
+          <li><%= link_to "Twitter", "http://www.twitter.com" %></li>
+          <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
+          <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
+          <li><%= link_to "Retweets Of Me", new_stream_path %></li>
+	  <li><%= link_to "Nice Tweets", nfeatures_path%></li>
+          <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
+          <li><%= link_to "Home", streams_path %></li>
+          <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
+	  
+          <li>Welcome, <%= @current_user.name %></li>
+          
+        </ul>
+	
+
+      </div>
+      <div class="nav-collapse" align="right" id="compose_tweet"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet"), new_compose_tweet_path, :method=>:get, :html=>{:id=>"compose_tweet_trigger"} %></div>
+
+ 
+
+      
+    </div>
+  </div>
+</div>
+<% end -%>
+
+<div class="container">
+    <div class="row">
+      <div class="span9"><%= yield %></div>
+      <div class="span3">
+        <h2>About Us</h2>
+        <p>We are a group of 4 graduate students, from Dept of Informatics and Computer Science Dept who are (needless to say) Awesome. We are making making this twitter app as a part of our project for Software Engineering Languages and Tools course for Fall 2013. Let us know if you like it.<br>
+You can drop us a mail at: <br>
+	teamawesomeselt@gmail.com<br>
+	Click on the Team Awesome Banner at the top to check out our tweets
+	Go Team Awesome!</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Feature: Create new user account
+
+Scenario: Loading registration page
+  Given I am on the users page
+  And I have clicked create new
+  Then I should be redirected to the users/new page

@@ -1,0 +1,9 @@
+This is just here for testing purposes: <br><br>
+
+oauth_token 
+= @auth.oauth_token
+secret
+= @auth.oauth_token_secret
+<br><br>
+auth
+= @auth.inspect
