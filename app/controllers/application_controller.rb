@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   protected
   def set_current_user
     @current_user ||= User.find_by_session_token(session[:session_token])
-    redirect_to login_path unless @current_user
+    redirect_to login_path unless @current_user && session[:screen_name]
   end
 end

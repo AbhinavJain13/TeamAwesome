@@ -14,7 +14,7 @@
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user %></a>
-      <div class="nav-collapse">
+      
 	
         <ul class="nav">
 
@@ -25,9 +25,10 @@
           <li><%= link_to "Home", streams_path %></li>
           <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
           <li>Welcome, <%= @current_user.name %></li>
+          <li>Twitter account: <%= @current_twitter_user %></li>
         </ul>
 	
-      </div>
+     
       <div class="nav-collapse" align="right"><%= image_tag("compose.jpg", :alt => "Compose Tweet") %></div>
       
     </div>
