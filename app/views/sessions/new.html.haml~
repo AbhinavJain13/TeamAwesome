@@ -27,6 +27,8 @@
 
   =link_to 'Create new account', new_user_path
 
+  %p.login= link_to 'Sign in with twitter', "/auth/twitter"
+
 
 
     

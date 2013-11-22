@@ -28,10 +28,19 @@ class SessionsController < ApplicationController
     @auth = request.env["omniauth.auth"]
    # client = Twitter::Client.new(oauth_token: @auth["oauth_token"], oauth_token_secret: @auth["oauth_token_secret"], screen_name: @auth["info"]["nickname"])
     #client.user(@auth["info"]["nickname"])
-    
+
     session[:oauth_token] = @auth.credentials.token
     session[:oauth_token_secret] = @auth.credentials.secret
     session[:screen_name] = @auth["info"]["nickname"]
+
+  Twitter.configure do |config|
+    config.consumer_key = 'h0MgV3Rzrr9nxFthM1THA'
+    config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'
+    config.oauth_token = @auth.credentials.token
+    config.oauth_token_secret = @auth.credentials.secret
+  end
+    
+
 
     #return @auth
     redirect_to streams_path
