@@ -1,12 +1,15 @@
 class Nfeature < ActiveRecord::Base
 
-  attr_accessible :tweet_id
-  def set_nice params
-    @nicevalue = Nfeature.find_all(:tweet_id => params[0], :isnice => true);
-    if !@nicevalue
-      Nfeature.create(:tweetid=> params, :isnice=> true);
-    else
-      @nicevalue.update_all
-  end
+  attr_accessible :tweetid, :isnice
+  def self.set_nice params
+    @nicevalue = Nfeature.where(:tweetid => params, :isnice => false)
 
+
+    if @nicevalue.empty?
+      Nfeature.create({:tweetid=> params, :isnice=> true}, :without_protection => true)
+    else
+      Nfeature.where(:tweetid => params, :isnice => false).update_all(:isnice=>true)
+    end
+
+  end
 end
