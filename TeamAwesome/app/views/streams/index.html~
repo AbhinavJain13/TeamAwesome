@@ -9,8 +9,16 @@
       $('#replyBox').remove();
     });
   },
+  //var note={ NHP-s
+  closeBox1: function(){
+    $('.Close1').click(function(){
+      console.log('Inside CLlose');
+      $('#noteBox').remove();
+    });
+  },
+  // NHP-e
   setup: function(){
-    var replyBox = '<tr class="tab-pane active fade in" id="replyBox"><td></td><td><form method="post" action="#"><textarea class="field span7" id="textarea" rows="3" placeholder="Enter a short synopsis"></textarea><br><input type="submit" value="Reply" class="btn btn-primary btn-small"></form><div class="Close" align="center"><a href="#">Close</a></div></td></tr>';
+    var replyBox = '<tr class="tab-pane active fade in" id="replyBox"><td></td><td><form method="post" action="#"><textarea class="field span7" id="textarea" rows="3" placeholder="Enter a short synopsis"></textarea><br><input type="submit" value="Write Note" class="btn btn-primary btn-small"></form><div class="Close" align="center"><a href="#">Close</a></div></td></tr>';
     //$(replyBox).appendTo($('body')).hide();
     $('.replies').click(function(){
       //console.log($(this).parent().parent());
@@ -22,8 +30,19 @@
     
     });
     //$(reply.nice);
-
-
+    //NHP-s
+    var noteBox = '<tr class="tab-pane active fade in" id="noteBox"><td></td><td><form method="post" action="#"><textarea class="field span7" id="textarea" rows="3" placeholder="Enter a short note"></textarea><br><input type="submit" value="note" class="btn btn-primary btn-small"></form><div class="Close1" align="center"><a href="#">Close</a></div></td></tr>';
+    //$(replyBox).appendTo($('body')).hide();
+    $('.note').click(function(){
+      //console.log($(this).parent().parent());
+      var a = document.getElementById("noteBox");
+      if(a==null){
+        $(replyBox).insertAfter($(this).parent().parent());
+        $(reply.closeBox1);
+        }
+    
+    });
+  // NHP-e
   }
   /*nice: function(){
     $(".nice").click(function(){
@@ -64,7 +83,7 @@ Here is your twitter stream- </strong>
             <td width="40"><img src = " <%= tweet.user.profile_image_url %> " ></img></td>
             <td><%= auto_link(tweet.full_text).html_safe %></td>
             <!--<td><%= tweet.in_reply_to_screen_name %></td>!-->
-           
+            
           </tr>
       <!--<td><%= tweet.retweeters_count %></td> !-->
       
@@ -74,6 +93,7 @@ Here is your twitter stream- </strong>
             <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
             <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
             <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
+            <span class="note" id="<%= tweet.id %>"><a href="#"><%= image_tag("addnote.png", :alt => "Add Note", :size => "16x16") %><%= link_to 'Add Note', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></a></span>
            </td>
           </tr>
         </table>
