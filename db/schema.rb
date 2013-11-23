@@ -11,18 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20131121234050) do
-=======
-ActiveRecord::Schema.define(:version => 20131119013204) do
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
 
   create_table "compose_tweets", :force => true do |t|
     t.string "author"
     t.string "text"
   end
 
-<<<<<<< HEAD
   create_table "features", :force => true do |t|
     t.string  "name"
     t.string  "notecontent"
@@ -44,19 +39,14 @@ ActiveRecord::Schema.define(:version => 20131119013204) do
     t.string  "tweetid"
   end
 
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   create_table "users", :force => true do |t|
     t.string "name"
     t.string "email"
     t.string "password_digest"
     t.string "session_token"
-<<<<<<< HEAD
     t.string "uid"
     t.string "provider"
     t.string "twitterName"
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

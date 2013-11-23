@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       #sign in and redirect to show page
       session[:session_token]=user.session_token
       @current_user = user
-      redirect_to '/auth/twitter'4
+      redirect_to '/auth/twitter'
     else
       flash[:warning] = 'Invalid email/password combination'				
       render 'new'
