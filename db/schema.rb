@@ -32,13 +32,6 @@ ActiveRecord::Schema.define(:version => 20131121234050) do
     t.string  "tweetid"
   end
 
-  create_table "tafeatures", :force => true do |t|
-    t.string  "name"
-    t.string  "notecontent"
-    t.boolean "isnice"
-    t.string  "tweetid"
-  end
-
   create_table "users", :force => true do |t|
     t.string "name"
     t.string "email"
