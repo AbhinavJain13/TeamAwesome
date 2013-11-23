@@ -14,9 +14,18 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: {minimum: 6}
   validates :password_confirmation, presence: true
 
+<<<<<<< HEAD
+  
+=======
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   private
     def create_session_token
       self.session_token=SecureRandom.urlsafe_base64
     end
+<<<<<<< HEAD
+
+  
+=======
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   
 end

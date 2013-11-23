@@ -10,7 +10,11 @@ class SessionsController < ApplicationController
       #sign in and redirect to show page
       session[:session_token]=user.session_token
       @current_user = user
+<<<<<<< HEAD
       redirect_to '/auth/twitter'
+=======
+      redirect_to streams_path
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
     else
       flash[:warning] = 'Invalid email/password combination'				
       render 'new'
@@ -24,6 +28,7 @@ class SessionsController < ApplicationController
     redirect_to login_path
   end
 
+<<<<<<< HEAD
   def twitter_create
     @auth = request.env["omniauth.auth"]
    # client = Twitter::Client.new(oauth_token: @auth["oauth_token"], oauth_token_secret: @auth["oauth_token_secret"], screen_name: @auth["info"]["nickname"])
@@ -33,12 +38,12 @@ class SessionsController < ApplicationController
     session[:oauth_token_secret] = @auth.credentials.secret
     session[:screen_name] = @auth["info"]["nickname"]
 
-Twitter.configure do |config|
-  config.consumer_key = 'h0MgV3Rzrr9nxFthM1THA'
-  config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'
-  config.oauth_token = @auth.credentials.token
-  config.oauth_token_secret = @auth.credentials.secret
-end
+  Twitter.configure do |config|
+    config.consumer_key = 'h0MgV3Rzrr9nxFthM1THA'
+    config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'
+    config.oauth_token = @auth.credentials.token
+    config.oauth_token_secret = @auth.credentials.secret
+  end
     
 
 
@@ -71,5 +76,7 @@ end
 
   
 
+=======
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
 end
 

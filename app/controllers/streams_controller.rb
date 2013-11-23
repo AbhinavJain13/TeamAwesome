@@ -13,11 +13,6 @@ end
 def new
   @stream = Twitter.user_timeline(session[:screen_name])
   @current_twitter_user = Twitter.user
-end
-
-def new
-  @stream = Twitter.user_timeline(session[:screen_name])
-  @current_twitter_user = Twitter.user
   @myrt = Twitter.retweets_of_me()
 end
 

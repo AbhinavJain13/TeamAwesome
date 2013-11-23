@@ -14,13 +14,18 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+<<<<<<< HEAD
 
       
       <div class="nav-collapse">
 
-      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user %></a>
+      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user.name %></a>
       
 
+=======
+      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user.screen_name%>" + ><%= @current_twitter_user.screen_name%></a>
+      <div class="nav-collapse">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
 	
         <ul class="nav">
 
@@ -28,6 +33,7 @@
           <li><%= link_to "University of Iowa", "http://www.uiowa.edu" %></li>
           <li><%= link_to "GitHub Repository", "https://github.com/jparchure/TeamAwesome" %></li>
           <li><%= link_to "Retweets Of Me", new_stream_path %></li>
+<<<<<<< HEAD
 	  <li><%= link_to "Nice Tweets", nfeatures_path%></li>
           <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
           <li><%= link_to "Home", streams_path %></li>
@@ -43,6 +49,16 @@
 
  
 
+=======
+          <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
+          <li><%= link_to "Home", streams_path %></li>
+          <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
+          <li>Welcome, <%= @current_user.name %></li>
+        </ul>
+	
+      </div>
+      <div class="nav-collapse" align="right" id="compose_tweet"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet"), new_compose_tweet_path, :method=>:get, :html=>{:id=>"compose_tweet_trigger"} %></div>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       
     </div>
   </div>

@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       #sign in and redirect to show page
       session[:session_token]=user.session_token
       @current_user = user
-      redirect_to '/auth/twitter'
+      redirect_to '/auth/twitter'4
     else
       flash[:warning] = 'Invalid email/password combination'				
       render 'new'
@@ -66,10 +66,6 @@ class SessionsController < ApplicationController
     session[:screen_name] = nil
     redirect_to login_path
   end
-
-
-
-  
 
 end
 

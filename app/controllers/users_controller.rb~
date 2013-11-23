@@ -11,7 +11,11 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = 'Welcome!'
       session[:session_token]=@user.session_token
+<<<<<<< HEAD
+      redirect_to '/auth/twitter'
+=======
       redirect_to streams_path 
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
     else
       render 'new'
     end

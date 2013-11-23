@@ -15,10 +15,10 @@
     </div>
     <div id="wrapper" style="display:none;">
 <<<<<<< HEAD
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-18T20:34:02-08:00">2013-11-18T20:34:02-08:00</abbr></div>
-=======
       <div class="timestamp">Generated <abbr class="timeago" title="2013-11-22T08:53:42-08:00">2013-11-22T08:53:42-08:00</abbr></div>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-11-21T21:33:07-08:00">2013-11-21T21:33:07-08:00</abbr></div>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -26,34 +26,34 @@
   <h2>
     <span class="group_name">All Files</span>
 <<<<<<< HEAD
-    (<span class="covered_percent"><span class="red">61.11%</span></span>
-     covered at
-     <span class="covered_strength">
-       <span class="red">
-         0.71
-=======
     (<span class="covered_percent"><span class="red">72.86%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
          0.84
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+    (<span class="covered_percent"><span class="red">69.14%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         1.18
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
 <<<<<<< HEAD
-    <b>9</b> files in total.
-    <b>72</b> relevant lines. 
-    <span class="green"><b>44</b> lines covered</span> and
-    <span class="red"><b>28</b> lines missed </span>
-=======
     <b>7</b> files in total.
     <b>70</b> relevant lines. 
     <span class="green"><b>51</b> lines covered</span> and
     <span class="red"><b>19</b> lines missed </span>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+    <b>9</b> files in total.
+    <b>81</b> relevant lines. 
+    <span class="green"><b>56</b> lines covered</span> and
+    <span class="red"><b>25</b> lines missed </span>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   </div>
   <table class="file_list">
     <thead>
@@ -72,55 +72,59 @@
       <tr>
         <td class="strong"><a href="#5db5d3e8c9444435e7177cbf9624d3fdc217b615" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
 <<<<<<< HEAD
-        <td class="green strong">100.0 %</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#52362be427ba9391621fa62b0a266983ef556597" class="src_link" title="app/controllers/compose_tweets_controller.rb">app/controllers/compose_tweets_controller.rb</a></td>
-        <td class="red strong">50.0 %</td>
-        <td>17</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0.5</td>
-=======
         <td class="red strong">71.43 %</td>
         <td>19</td>
         <td>7</td>
         <td>5</td>
         <td>2</td>
         <td>0.7</td>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#52362be427ba9391621fa62b0a266983ef556597" class="src_link" title="app/controllers/compose_tweets_controller.rb">app/controllers/compose_tweets_controller.rb</a></td>
+        <td class="green strong">94.12 %</td>
+        <td>32</td>
+        <td>17</td>
+        <td>16</td>
+        <td>1</td>
+        <td>2.4</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       </tr>
       
       <tr>
         <td class="strong"><a href="#5b8a95254b24014ae064ae53fa1e022122c1fc73" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
 <<<<<<< HEAD
-        <td class="red strong">31.25 %</td>
-        <td>28</td>
-        <td>16</td>
-        <td>5</td>
-        <td>11</td>
-        <td>0.3</td>
-=======
         <td class="red strong">80.0 %</td>
         <td>66</td>
         <td>25</td>
         <td>20</td>
         <td>5</td>
         <td>1.4</td>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+        <td class="red strong">31.25 %</td>
+        <td>28</td>
+        <td>16</td>
+        <td>5</td>
+        <td>11</td>
+        <td>0.3</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       </tr>
       
       <tr>
         <td class="strong"><a href="#b6330bb53a43a27619111e15fb867461587153a2" class="src_link" title="app/controllers/streams_controller.rb">app/controllers/streams_controller.rb</a></td>
         <td class="red strong">54.55 %</td>
+<<<<<<< HEAD
         <td>21</td>
+=======
+        <td>19</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td>11</td>
         <td>6</td>
         <td>5</td>
@@ -148,6 +152,8 @@
       </tr>
       
       <tr>
+<<<<<<< HEAD
+=======
         <td class="strong"><a href="#1c24dc2a231e3a8469062d3a01f1b445c09f0276" class="src_link" title="app/models/compose_tweet.rb">app/models/compose_tweet.rb</a></td>
         <td class="red strong">75.0 %</td>
         <td>7</td>
@@ -158,6 +164,7 @@
       </tr>
       
       <tr>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td class="strong"><a href="#111fa1d7fa2810e1dd1bd507a90e8726237375b8" class="src_link" title="app/models/stream.rb">app/models/stream.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
@@ -170,7 +177,11 @@
       <tr>
         <td class="strong"><a href="#4faa8a1a3123d8798b839daa31eb2f860324f76b" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">93.33 %</td>
+<<<<<<< HEAD
         <td>25</td>
+=======
+        <td>22</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td>15</td>
         <td>14</td>
         <td>1</td>
@@ -187,34 +198,34 @@
   <h2>
     <span class="group_name">Controllers</span>
 <<<<<<< HEAD
-    (<span class="covered_percent"><span class="red">49.02%</span></span>
-     covered at
-     <span class="covered_strength">
-       <span class="red">
-         0.54
-=======
     (<span class="covered_percent"><span class="red">66.04%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
          0.75
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+    (<span class="covered_percent"><span class="red">61.67%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         1.38
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
 <<<<<<< HEAD
-    <b>5</b> files in total.
-    <b>51</b> relevant lines. 
-    <span class="green"><b>25</b> lines covered</span> and
-    <span class="red"><b>26</b> lines missed </span>
-=======
     <b>4</b> files in total.
     <b>53</b> relevant lines. 
     <span class="green"><b>35</b> lines covered</span> and
     <span class="red"><b>18</b> lines missed </span>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+    <b>5</b> files in total.
+    <b>60</b> relevant lines. 
+    <span class="green"><b>37</b> lines covered</span> and
+    <span class="red"><b>23</b> lines missed </span>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   </div>
   <table class="file_list">
     <thead>
@@ -233,55 +244,59 @@
       <tr>
         <td class="strong"><a href="#5db5d3e8c9444435e7177cbf9624d3fdc217b615" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
 <<<<<<< HEAD
-        <td class="green strong">100.0 %</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#52362be427ba9391621fa62b0a266983ef556597" class="src_link" title="app/controllers/compose_tweets_controller.rb">app/controllers/compose_tweets_controller.rb</a></td>
-        <td class="red strong">50.0 %</td>
-        <td>17</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0.5</td>
-=======
         <td class="red strong">71.43 %</td>
         <td>19</td>
         <td>7</td>
         <td>5</td>
         <td>2</td>
         <td>0.7</td>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#52362be427ba9391621fa62b0a266983ef556597" class="src_link" title="app/controllers/compose_tweets_controller.rb">app/controllers/compose_tweets_controller.rb</a></td>
+        <td class="green strong">94.12 %</td>
+        <td>32</td>
+        <td>17</td>
+        <td>16</td>
+        <td>1</td>
+        <td>2.4</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       </tr>
       
       <tr>
         <td class="strong"><a href="#5b8a95254b24014ae064ae53fa1e022122c1fc73" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
 <<<<<<< HEAD
-        <td class="red strong">31.25 %</td>
-        <td>28</td>
-        <td>16</td>
-        <td>5</td>
-        <td>11</td>
-        <td>0.3</td>
-=======
         <td class="red strong">80.0 %</td>
         <td>66</td>
         <td>25</td>
         <td>20</td>
         <td>5</td>
         <td>1.4</td>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+        <td class="red strong">31.25 %</td>
+        <td>28</td>
+        <td>16</td>
+        <td>5</td>
+        <td>11</td>
+        <td>0.3</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
       </tr>
       
       <tr>
         <td class="strong"><a href="#b6330bb53a43a27619111e15fb867461587153a2" class="src_link" title="app/controllers/streams_controller.rb">app/controllers/streams_controller.rb</a></td>
         <td class="red strong">54.55 %</td>
+<<<<<<< HEAD
         <td>21</td>
+=======
+        <td>19</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td>11</td>
         <td>6</td>
         <td>5</td>
@@ -306,20 +321,35 @@
           <div class="file_list_container" id="Models">
   <h2>
     <span class="group_name">Models</span>
+<<<<<<< HEAD
+    (<span class="covered_percent"><span class="green">93.75%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.95
+=======
     (<span class="covered_percent"><span class="yellow">90.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
          0.9
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
+<<<<<<< HEAD
+    <b>2</b> files in total.
+    <b>16</b> relevant lines. 
+    <span class="green"><b>15</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
+=======
     <b>3</b> files in total.
     <b>20</b> relevant lines. 
     <span class="green"><b>18</b> lines covered</span> and
     <span class="red"><b>2</b> lines missed </span>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   </div>
   <table class="file_list">
     <thead>
@@ -336,6 +366,8 @@
     <tbody>
       
       <tr>
+<<<<<<< HEAD
+=======
         <td class="strong"><a href="#1c24dc2a231e3a8469062d3a01f1b445c09f0276" class="src_link" title="app/models/compose_tweet.rb">app/models/compose_tweet.rb</a></td>
         <td class="red strong">75.0 %</td>
         <td>7</td>
@@ -346,6 +378,7 @@
       </tr>
       
       <tr>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td class="strong"><a href="#111fa1d7fa2810e1dd1bd507a90e8726237375b8" class="src_link" title="app/models/stream.rb">app/models/stream.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
@@ -358,7 +391,11 @@
       <tr>
         <td class="strong"><a href="#4faa8a1a3123d8798b839daa31eb2f860324f76b" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">93.33 %</td>
+<<<<<<< HEAD
         <td>25</td>
+=======
+        <td>22</td>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <td>15</td>
         <td>14</td>
         <td>1</td>
@@ -542,18 +579,18 @@
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
 <<<<<<< HEAD
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-=======
     <h4><span class="red">71.43 %</span> covered</h4>
     <div>
       <b>7</b> relevant lines. 
       <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
     </div>
   </div>
   
@@ -578,92 +615,23 @@
           <code class="ruby">  protected</code>
         </li>
       
+<<<<<<< HEAD
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  def set_current_user</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">    @current_user ||= User.find_by_session_token(session[:session_token])</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    redirect_to login_path unless @current_user</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="52362be427ba9391621fa62b0a266983ef556597">
-  <div class="header">
-    <h3>app/controllers/compose_tweets_controller.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
-    <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class ComposeTweetsController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">before_filter :set_current_user</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="6">
           
           
-<<<<<<< HEAD
-          <code class="ruby">    @current_twitter_user = Twitter.user</code>
-=======
           <code class="ruby">    redirect_to login_path unless @current_user &amp;&amp; session[:screen_name]</code>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -673,35 +641,18 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
+=======
+        <li class="never" data-hits="" data-linenumber="4">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-<<<<<<< HEAD
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">    @tweet = Twitter.update(params[:compose_tweet][:text])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
-          
-          <code class="ruby">    ComposeTweet.create_compose_tweet(@tweet.id, @tweet.text, @current_user.name)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
-          
-          <code class="ruby">    redirect_to streams_path </code>
-=======
           <code class="ruby">  def client</code>
         </li>
       
@@ -721,34 +672,23 @@
           
           
           <code class="ruby">      #config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'</code>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-<<<<<<< HEAD
-          <code class="ruby">  end</code>
-=======
           <code class="ruby">      #config.oauth_token = session[:oauth_token]</code>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-<<<<<<< HEAD
-          <code class="ruby"></code>
-=======
           <code class="ruby">      #config.oauth_token_secret = session[:oauth_token_secret]</code>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-<<<<<<< HEAD
-=======
           <code class="ruby">     #end</code>
         </li>
       
@@ -771,44 +711,67 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
+=======
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_current_user</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    @current_user ||= User.find_by_session_token(session[:session_token])</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="7">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    redirect_to login_path unless @current_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
           <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby"></code>
         </li>
       
     </ol>
   </pre>
 </div>
       
+<<<<<<< HEAD
         <div class="source_table" id="5b8a95254b24014ae064ae53fa1e022122c1fc73">
   <div class="header">
     <h3>app/controllers/sessions_controller.rb</h3>
-<<<<<<< HEAD
-    <h4><span class="red">31.25 %</span> covered</h4>
-    <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>11</b> lines missed.</span>
-=======
     <h4><span class="red">80.0 %</span> covered</h4>
     <div>
       <b>25</b> relevant lines. 
       <span class="green"><b>20</b> lines covered</span> and
       <span class="red"><b>5</b> lines missed.</span>
->>>>>>> 0db924b27fb996f518e0149ced306614a5adeec6
+=======
+        <div class="source_table" id="52362be427ba9391621fa62b0a266983ef556597">
+  <div class="header">
+    <h3>app/controllers/compose_tweets_controller.rb</h3>
+    <h4><span class="green">94.12 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
     </div>
   </div>
   
@@ -818,6 +781,7 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
+<<<<<<< HEAD
           <code class="ruby">class SessionsController &lt; ApplicationController</code>
         </li>
       
@@ -828,43 +792,90 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
+=======
+          <code class="ruby">class ComposeTweetsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">before_filter :set_current_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+<<<<<<< HEAD
         <li class="covered" data-hits="1" data-linenumber="4">
+=======
+        <li class="covered" data-hits="1" data-linenumber="5">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           <span class="hits">1</span>
           
           <code class="ruby">  def new</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="5">
+=======
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">    #render :partial=&gt;'compose_tweet' and return if request.xhr?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    @current_twitter_user = Twitter.user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="6">
+=======
+        <li class="never" data-hits="" data-linenumber="9">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="covered" data-hits="1" data-linenumber="7">
+=======
+        <li class="covered" data-hits="1" data-linenumber="10">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           <span class="hits">1</span>
           
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+<<<<<<< HEAD
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
           
           <code class="ruby">    user=User.find_by_email(params[:session][:email])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
           
           <code class="ruby">    if user &amp;&amp; user.authenticate(params[:session][:password])</code>
         </li>
@@ -875,20 +886,20 @@
           <code class="ruby">      #sign in and redirect to show page</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
           
           <code class="ruby">      session[:session_token]=user.session_token</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">      @current_user = user</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
           
           <code class="ruby">      redirect_to '/auth/twitter'</code>
         </li>
@@ -899,30 +910,86 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:warning] = 'Invalid email/password combination'				</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">      render 'new'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
+=======
+        <li class="covered" data-hits="5" data-linenumber="11">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @tweet_text = params[:compose_tweet][:text]</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="12">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    if @tweet_text.length &gt; 0 </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @tweet = Twitter.update(params[:compose_tweet][:text])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      ComposeTweet.create_compose_tweet(@tweet.id, @tweet.text, @current_user.name)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      redirect_to streams_path </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    else </code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      flash[:notice] = 'Please compose a tweet between 1 and 140 characters'</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="18">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      redirect_to new_compose_tweet_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">    end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="18">
+=======
+        <li class="never" data-hits="" data-linenumber="20">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="19">
           
           
@@ -935,26 +1002,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
           
           <code class="ruby">    session[:session_token]=nil</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
           
           <code class="ruby">    @current_user=nil</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
           
           <code class="ruby">    flash[:notice]='You have logged out'</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
           
           <code class="ruby">    redirect_to login_path</code>
         </li>
@@ -981,23 +1048,80 @@
           
           
           <code class="ruby">    @auth = request.env[&quot;omniauth.auth&quot;]</code>
+=======
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @current_twitter_user = Twitter.user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    #retrieve the first 50 tweets sent from the user's twitter account</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @timeline = Twitter.user_timeline(@current_twitter_user.screen_name).take(50)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="26">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @compose_tweet = ComposeTweet.all</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="27">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @author = &quot;?&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
+<<<<<<< HEAD
           <code class="ruby">   # client = Twitter::Client.new(oauth_token: @auth[&quot;oauth_token&quot;], oauth_token_secret: @auth[&quot;oauth_token_secret&quot;], screen_name: @auth[&quot;info&quot;][&quot;nickname&quot;])</code>
+=======
+          <code class="ruby"></code>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
+<<<<<<< HEAD
           <code class="ruby">    #client.user(@auth[&quot;info&quot;][&quot;nickname&quot;])</code>
+=======
+          <code class="ruby">end</code>
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
+<<<<<<< HEAD
           <code class="ruby">    </code>
         </li>
       
@@ -1020,11 +1144,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
+=======
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="5b8a95254b24014ae064ae53fa1e022122c1fc73">
+  <div class="header">
+    <h3>app/controllers/sessions_controller.rb</h3>
+    <h4><span class="red">31.25 %</span> covered</h4>
+    <div>
+      <b>16</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SessionsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  skip_before_filter :set_current_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="36">
           
           
@@ -1038,11 +1205,27 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
+=======
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="39">
           
           
@@ -1110,11 +1293,81 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
+=======
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    user=User.find_by_email(params[:session][:email])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    if user &amp;&amp; user.authenticate(params[:session][:password])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">      #sign in and redirect to show page</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">      session[:session_token]=user.session_token</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">      @current_user = user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">      redirect_to streams_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">      flash[:warning] = 'Invalid email/password combination'				</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">      render 'new'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="51">
           
           
@@ -1159,16 +1412,55 @@
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
+=======
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">    session[:session_token]=nil</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    @current_user=nil</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    flash[:notice]='You have logged out'</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           <code class="ruby">    redirect_to login_path</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="59">
+=======
+        <li class="never" data-hits="" data-linenumber="25">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="60">
           
           
@@ -1194,18 +1486,29 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
+=======
+        <li class="never" data-hits="" data-linenumber="26">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="65">
+=======
+        <li class="never" data-hits="" data-linenumber="27">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="66">
+=======
+        <li class="never" data-hits="" data-linenumber="28">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
@@ -1277,6 +1580,7 @@
           <code class="ruby">def index</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="9">
           
           
@@ -1302,29 +1606,57 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">def new</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="16">
+=======
+        <li class="missed" data-hits="0" data-linenumber="9">
           
           
           <code class="ruby">  @stream = Twitter.user_timeline(&quot;uiowa&quot;)</code>
         </li>
       
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">  @current_twitter_user = Twitter.user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+<<<<<<< HEAD
+        <li class="never" data-hits="" data-linenumber="14">
+=======
+        <li class="never" data-hits="" data-linenumber="12">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+<<<<<<< HEAD
+        <li class="covered" data-hits="1" data-linenumber="15">
+=======
+        <li class="covered" data-hits="1" data-linenumber="13">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          <span class="hits">1</span>
+          
+          <code class="ruby">def new</code>
+        </li>
+      
+<<<<<<< HEAD
+        <li class="missed" data-hits="0" data-linenumber="16">
+=======
+        <li class="missed" data-hits="0" data-linenumber="14">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
+          
+          
+          <code class="ruby">  @stream = Twitter.user_timeline(&quot;uiowa&quot;)</code>
+        </li>
+      
+<<<<<<< HEAD
         <li class="missed" data-hits="0" data-linenumber="17">
           
           
@@ -1332,24 +1664,45 @@
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="18">
+=======
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">  @current_twitter_user = Twitter.user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  @myrt = Twitter.retweets_of_me()</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="19">
+=======
+        <li class="never" data-hits="" data-linenumber="17">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="20">
+=======
+        <li class="never" data-hits="" data-linenumber="18">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="21">
+=======
+        <li class="never" data-hits="" data-linenumber="19">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">end</code>
@@ -1521,6 +1874,8 @@
   </pre>
 </div>
       
+<<<<<<< HEAD
+=======
         <div class="source_table" id="1c24dc2a231e3a8469062d3a01f1b445c09f0276">
   <div class="header">
     <h3>app/models/compose_tweet.rb</h3>
@@ -1581,6 +1936,7 @@
   </pre>
 </div>
       
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         <div class="source_table" id="111fa1d7fa2810e1dd1bd507a90e8726237375b8">
   <div class="header">
     <h3>app/models/stream.rb</h3>
@@ -1721,6 +2077,7 @@
           <code class="ruby"></code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="17">
           
           
@@ -1728,29 +2085,45 @@
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
+=======
+        <li class="covered" data-hits="1" data-linenumber="17">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
+<<<<<<< HEAD
         <li class="covered" data-hits="1" data-linenumber="19">
+=======
+        <li class="covered" data-hits="1" data-linenumber="18">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           <span class="hits">1</span>
           
           <code class="ruby">    def create_session_token</code>
         </li>
       
+<<<<<<< HEAD
         <li class="missed" data-hits="0" data-linenumber="20">
+=======
+        <li class="missed" data-hits="0" data-linenumber="19">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">      self.session_token=SecureRandom.urlsafe_base64</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="21">
+=======
+        <li class="never" data-hits="" data-linenumber="20">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">    end</code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="22">
           
           
@@ -1764,12 +2137,19 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
+=======
+        <li class="never" data-hits="" data-linenumber="21">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">  </code>
         </li>
       
+<<<<<<< HEAD
         <li class="never" data-hits="" data-linenumber="25">
+=======
+        <li class="never" data-hits="" data-linenumber="22">
+>>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
           
           
           <code class="ruby">end</code>

@@ -8,7 +8,6 @@ TeamAwesome::Application.routes.draw do
   match '/logout', to: 'sessions#destroy', via: :delete
   resources :nfeatures
   match '/nice', to: 'nfeatures#indedx', via: [:get, :post]
-
   match "auth/:provider/callback" => 'sessions#twitter_create', :as => :twitterCreate
   match '/signout/twitter' => 'sessions#twitter_destroy', :as => :twitterSignout
 

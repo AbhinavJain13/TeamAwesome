@@ -1,4 +1,6 @@
 Feature: Login to Team Awesome
+
+Given: I have one user with email "example@email.com" and password "password"
   
 Scenario: 
   When I am on the users page
