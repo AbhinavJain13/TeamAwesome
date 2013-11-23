@@ -26,6 +26,8 @@ def new
 end
 
 def show
+    @notevalue=Nfeature.new(params[:tweetid],@current_user)
+
 
 end
 

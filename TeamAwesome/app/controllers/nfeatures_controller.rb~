@@ -17,6 +17,8 @@ def index
 end
 def new
   
+
+  
   #@stream = Twitter.user_timeline("uiowa")
   #@current_twitter_user = Twitter.user
   #@myrt = Twitter.retweets_of_me()
@@ -24,6 +26,8 @@ def new
 end
 
 def show
+    @notevalue=Nfeature.new(params[:tweetid],@current_user)
+
 
 end
 
