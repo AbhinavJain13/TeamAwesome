@@ -73,6 +73,7 @@ Here is your twitter stream- </strong>
             <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
             <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
             <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
+            <span class="note" ><a href="nfeatures/show" class=""><%= image_tag("addnote.png", :alt => "Add Note", :size => "16x16") %>Add Note</a></span>
            </td>
           </tr>
         </table>

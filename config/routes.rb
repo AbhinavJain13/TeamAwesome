@@ -10,6 +10,7 @@ TeamAwesome::Application.routes.draw do
   match '/nice', to: 'nfeatures#indedx', via: [:get, :post]
   match "auth/:provider/callback" => 'sessions#twitter_create', :as => :twitterCreate
   match '/signout/twitter' => 'sessions#twitter_destroy', :as => :twitterSignout
+  match '/nfeatures/new', to: 'nfeatures#new', via: [:get, :post] # NHP
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
