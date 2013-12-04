@@ -21,6 +21,7 @@ def new
   @stream = Twitter.user_timeline("uiowa")
   @current_twitter_user = Twitter.user
   @notevalue=Nfeature.create({:tweetid => '2', :notecontent => params[:nfeature][:notecontent],:name => @current_user.name},:without_protection => true)
+  @tweet_with_notes = Nfeature.where(:name => @current_user.name)
 end
 
 def show
