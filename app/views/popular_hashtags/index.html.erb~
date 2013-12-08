@@ -1,10 +1,10 @@
 <h2>Popular Hashtags</h2>
 <br/>
-<p>These hashtags are currently trending amongst the people you follow.</p>
+<p>These hashtags are currently trending in your stream.</p>
 <ul>
   <% @hashtags.each do |tag| %>
     <li>
-      <%= tag[0]  %> 
+      <%= link_to tag[0], show_popular_hashtag_path({:id=>tag[0]}) %> 
       (<%= tag[1].length %>)
     </li>
   <% end %>

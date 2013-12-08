@@ -32,11 +32,11 @@ before_filter :set_current_user, :get_hashtags
 
   def show
     @current_twitter_user = Twitter.user
-    tag = params[:id] 
+    @tag = params 
     @tweets = []
     @hashtags.each do |hashtag|
-      if @hashtags[0] == tag 
-        @tweets = @hashtags[1]
+      if hashtag[0] == @tag 
+        @tweets = hashtag[1]
         break
       end
     end

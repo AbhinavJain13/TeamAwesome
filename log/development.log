@@ -62713,3 +62713,4 @@ Started GET "/assets/compose_tweet.js?body=1" for 127.0.0.1 at 2013-12-07 21:28:
 Served asset /compose_tweet.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml

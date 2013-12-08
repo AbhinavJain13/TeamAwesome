@@ -31,13 +31,14 @@ describe PopularHashtagsController do
   end
 
   describe 'make tweets with a given hashtag available to template' do
-    it 'should make the full text of each tweet available to the template' do
+    it 'should make the hashtag and the full text of each tweet available to the template' do
       Twitter.stub(:user)
       Twitter.stub(:home_timeline)
       my_hashtags = [["#cats", [@tweet1, @tweet2, @tweet3]], ["#dogs", [@tweet2, @tweet3]], ["#cows", [@tweet1]]]
-      controller.stub(:get_hashtags)
+      controller.should_receive(:get_hashtags)
       controller.instance_variable_set(:@hashtags, my_hashtags)
       get :show, {:id=>"#dogs"}
+      assigns(:tag).should == "#dogs"
       assigns(:tweets).should == [@tweet2, @tweet3]
     end
   end
