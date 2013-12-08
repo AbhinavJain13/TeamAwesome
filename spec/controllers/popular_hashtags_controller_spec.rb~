@@ -3,38 +3,43 @@ require 'spec_helper'
 describe PopularHashtagsController do
 
   before :each do
-   @current_user = double()
-   User.stub(:find_by_session_token).and_return(@current_user)
+    @current_user = double()
+    User.stub(:find_by_session_token).and_return(@current_user)
+    @tweet1 = double()
+    @tweet2 = double()
+    @tweet3 = double()
+    @tweet1.stub(:full_text).and_return('I love #cows and #cats')
+    @tweet2.stub(:full_text).and_return('#dogs rule #cats drool')
+    @tweet3.stub(:full_text).and_return('#dogs are the best and #cats are okay too')
   end
 
   describe 'show list of popular hashtags' do
-
     before :each do
-      #@current_twitter_user = double()
-      #@current_twitter_user.stub(:screen_name)
-      @tweet1 = double()
-      @tweet2 = double()
-      @tweet3 = double()
-      @tweet1.stub(:full_text).and_return('I love #cows and #cats')
-      @tweet2.stub(:full_text).and_return('#dogs rule #cats drool')
-      @tweet3.stub(:full_text).and_return('#dogs are the best and #cats are okay too')
-      @tweet1.stub(:id).and_return('123')
-      @tweet2.stub(:id).and_return('456')
-      @tweet3.stub(:id).and_return('789')
       @timeline = [@tweet1, @tweet2, @tweet3]
     end
     it 'should retrieve the first 1000 tweets from the user twitter timeline' do
-      #Twitter.should_receive(:user).and_return(@current_twitter_user)
       Twitter.should_receive(:user)
       Twitter.should_receive(:home_timeline).and_return(@timeline)
       get :index
     end
-    it 'should make hashtags and their corresponding tweet ids available to the template' do
-      #Twitter.stub(:user).and_return(@current_twitter_user)
+    it 'should make hashtags and their corresponding tweets available to the template' do
       Twitter.stub(:user)
       Twitter.stub(:home_timeline).and_return(@timeline) 
       get :index
-      assigns(:hashtags).should == [["#cats", ["123", "456", "789"]], ["#dogs", ["456", "789"]], ["#cows", ["123"]]]
+      assigns(:hashtags).should == [["#cats", [@tweet1, @tweet2, @tweet3]], ["#dogs", [@tweet2, @tweet3]], ["#cows", [@tweet1]]]
     end
   end
+
+  describe 'show list of tweets with a given hashtag' do
+    it 'should make the full text of each tweet available to the template' do
+      Twitter.stub(:user)
+      Twitter.stub(:home_timeline)
+      my_hashtags = [["#cats", [@tweet1, @tweet2, @tweet3]], ["#dogs", [@tweet2, @tweet3]], ["#cows", [@tweet1]]]
+      controller.stub(:get_hashtags)
+      controller.instance_variable_set(:@hashtags, my_hashtags)
+      get :show, {:id=>"#dogs"}
+      assigns(:tweets).should == [@tweet2, @tweet3]
+    end
+  end
+
 end
