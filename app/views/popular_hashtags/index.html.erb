@@ -1,0 +1,11 @@
+<h2>Popular Hashtags</h2>
+<br/>
+<p>These hashtags are currently trending in your stream.</p>
+<ul>
+  <% @hashtags.each do |tag| %>
+    <li>
+      <%= tag[0]  %> 
+      (<%= tag[1].length %>)
+    </li>
+  <% end %>
+</ul>
