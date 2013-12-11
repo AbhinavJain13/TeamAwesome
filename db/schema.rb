@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131121234050) do
+ActiveRecord::Schema.define(:version => 20131208213640) do
 
   create_table "compose_tweets", :force => true do |t|
     t.string "author"
@@ -32,13 +32,6 @@ ActiveRecord::Schema.define(:version => 20131121234050) do
     t.string  "tweetid"
   end
 
-  create_table "tafeatures", :force => true do |t|
-    t.string  "name"
-    t.string  "notecontent"
-    t.boolean "isnice"
-    t.string  "tweetid"
-  end
-
   create_table "users", :force => true do |t|
     t.string "name"
     t.string "email"
@@ -47,6 +40,8 @@ ActiveRecord::Schema.define(:version => 20131121234050) do
     t.string "uid"
     t.string "provider"
     t.string "twitterName"
+    t.string "oauth_token"
+    t.string "oauth_token_secret"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

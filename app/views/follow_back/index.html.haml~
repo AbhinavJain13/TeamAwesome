@@ -1,0 +1,28 @@
+/@followerArray.inspect
+
+/@followingArray.inspect
+<br>
+%h2 Users You Follow Who Don't Follow You Back
+<br><br><br>
+/@results.inspect
+
+- if flash[:notice]
+  #notice.message= flash[:notice]
+<br>
+%table#followers
+  %thead
+    %th{ :style => "align: left;" } actual_name
+    %th{ :style => "align: left;" } screen_name
+  %tbody
+    - if !flash[:notice]
+      - @results.each do |result|
+        %tr
+          %td{ :style => "padding: 5px;" }= result[0]
+          %td{ :style => "padding: 5px;" }= link_to "#{result[1]}", "http://www.twitter.com/#{result[1]}"
+
+
+
+
+
+
+

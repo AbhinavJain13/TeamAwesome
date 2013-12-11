@@ -7,12 +7,15 @@ TeamAwesome::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
+  resources :nfeatures
+  match '/follow_back', to: 'follow_back#index'
   resources :nfeatures do
    collection do
 	get 'note'
         get 'popular'
       end
    end 
+
   match '/nice', to: 'nfeatures#indedx', via: [:get, :post]
   match "auth/:provider/callback" => 'sessions#twitter_create', :as => :twitterCreate
   match '/signout/twitter' => 'sessions#twitter_destroy', :as => :twitterSignout

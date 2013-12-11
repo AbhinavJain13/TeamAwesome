@@ -1,9 +1,11 @@
 This is just here for testing purposes: <br><br>
 
+= @user.inspect
+
 oauth_token 
-= @auth.oauth_token
+= @auth.credentials.token
 secret
-= @auth.oauth_token_secret
+= @auth.credentials.secret
 <br><br>
 auth
 = @auth.inspect

@@ -30,8 +30,11 @@
 
 	  <li><%= link_to "Nice Tweets", nfeatures_path%></li>
           <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
+<<<<<<< HEAD
           <li><%= link_to "Follow Back", follow_back_path %></li>
+=======
           <li><%= link_to "Popular Hashtags", popular_hashtags_path %></li>
+>>>>>>> e7b1b4f21c534268dc2bc6e247948c2084497d9c
           <li><%= link_to "Home", streams_path %></li>
           <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
 	  
