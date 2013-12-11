@@ -1,0 +1,19 @@
+<h2><%= @tag %></h2>
+<br/>
+
+<table class="table" border =2>
+<% @tweets.each do |tweet| %>
+  <tr>
+      <td><img src = " <%= tweet.user.profile_image_url %> " /></td>
+      <td><%= auto_link(tweet.full_text).html_safe %></td>
+  </tr>
+  <tr class="basicFunctions">
+    <td></td>
+    <td><span class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a></span>
+    <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
+    <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
+    <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
+    </td>
+  </tr>
+<% end %>
+</table>
