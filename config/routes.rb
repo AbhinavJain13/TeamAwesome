@@ -6,12 +6,18 @@ TeamAwesome::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
-  resources :nfeatures
+  resources :nfeatures do
+   collection do
+	get 'note'
+        get 'popular'
+      end
+   end 
   match '/nice', to: 'nfeatures#indedx', via: [:get, :post]
   match "auth/:provider/callback" => 'sessions#twitter_create', :as => :twitterCreate
   match '/signout/twitter' => 'sessions#twitter_destroy', :as => :twitterSignout
   match '/nfeatures/new', to: 'nfeatures#new', via: [:get, :post] # NHP
-
+  match '/nfeatures/note', to: 'nfeatures#note', via: [:get, :post]# NHP
+  match '/nfeatures/popular', to: 'nfeatures#popular', via: [:get, :post] # NHP
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -26,7 +26,7 @@ class Nfeature < ActiveRecord::Base
     @true_id = Nfeature.where(:isnice=>true)
     @true_id.each do |tid|
       #@tweet_ids = tid[:tweetid]
-      @stream[:tweets].push Twitter.status(tid[:tweetid])
+      @stream[:tweets].push Twitter.status('410822499472248832')#tid[:tweetid])
       @stream[:uname].push tid[:name]
     end
     return @stream
