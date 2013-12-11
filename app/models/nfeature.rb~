@@ -14,7 +14,7 @@ class Nfeature < ActiveRecord::Base
      	  Nfeature.where(:tweetid => params, :isnice => false).update_all(:isnice=>true)
 	end
     else
-      Nfeature.create({:tweetid=> params, :isnice => true, name: cuser}, :without_protection => true)
+      Nfeature.create({:tweetid=> params, :isnice => true, name: cuser.name}, :without_protection => true)
     end
    
 
@@ -26,7 +26,7 @@ class Nfeature < ActiveRecord::Base
     @true_id = Nfeature.where(:isnice=>true)
     @true_id.each do |tid|
       #@tweet_ids = tid[:tweetid]
-      @stream[:tweets].push Twitter.status(tid[:tweetid])
+      @stream[:tweets].push Twitter.status(tid[:tweetid].to_i)
       @stream[:uname].push tid[:name]
     end
     return @stream
