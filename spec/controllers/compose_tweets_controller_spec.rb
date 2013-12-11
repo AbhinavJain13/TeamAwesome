@@ -77,7 +77,7 @@ describe ComposeTweetsController do
       ComposeTweet.stub(:all)
       get :index
     end
-    it 'should make all compose tweet records availabel to the template'  do
+    it 'should make all compose tweet records available to the template'  do
       Twitter.stub(:user).and_return(@current_twitter_user)
       Twitter.stub(:user_timeline).and_return(@user_timeline)
       @user_timeline.should_receive(:take).with(50)

@@ -7,6 +7,6 @@ Feature: view all the tweets associated with an account that have been retweeted
 Background: I have logged in
 
 Scenario: view all retweets associated with my account
-  Given I am on the TeamAwesome homepage
+  Given I am on the TeamAwesome homepagee
   When I click on retweets of me button
   Then I should see all of my retweets
