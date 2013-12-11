@@ -1,0 +1,20 @@
+<html>
+<body>
+<p1>line 1 </p1>
+<p2>line 2 </p2><br><br>
+<p3> </p3><br>
+
+<h1 style = "color:blue;text-align:center;font-size:25px;">Most popular Tweets !!!   </h1>
+<table class="table" border =2>
+<% @pop_tweets.each do |tweet, popnum| %>
+
+  <tr>
+      <td><%=tweet=%></td>
+      <td><%=popnum=%></td>   
+  </tr>
+  
+<% end %>
+</table>
+
+</body>
+</html>
