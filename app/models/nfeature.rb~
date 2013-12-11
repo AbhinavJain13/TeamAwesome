@@ -14,7 +14,7 @@ class Nfeature < ActiveRecord::Base
      	  Nfeature.where(:tweetid => params, :isnice => false).update_all(:isnice=>true)
 	end
     else
-      Nfeature.create({:tweetid=> params, :isnice => true, name: cuser}, :without_protection => true)
+      Nfeature.create({:tweetid=> params, :isnice => true, name: cuser.name}, :without_protection => true)
     end
    
 

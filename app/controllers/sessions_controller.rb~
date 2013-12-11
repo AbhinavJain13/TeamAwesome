@@ -8,9 +8,29 @@ class SessionsController < ApplicationController
     user=User.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       #sign in and redirect to show page
-      session[:session_token]=user.session_token
+      #session[:session_token]=user.session_token
+     #@test_user = user
+      return @test_user
       @current_user = user
-      redirect_to '/auth/twitter'4
+      session[:email] = params[:session][:email]
+
+      if @current_user.oauth_token != nil
+
+        session[:oauth_token] = @current_user.oauth_token
+        session[:oauth_token_secret] = @current_user.oauth_token_secret
+        session[:screen_name] = @current_user.twitterName
+
+         Twitter.configure do |config|
+           config.consumer_key = 'h0MgV3Rzrr9nxFthM1THA'
+           config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'
+           config.oauth_token = @current_user.oauth_token
+           config.oauth_token_secret = @current_user.oauth_token_secret
+         end
+
+        redirect_to streams_path
+      else
+        redirect_to '/auth/twitter'
+      end
     else
       flash[:warning] = 'Invalid email/password combination'				
       render 'new'
@@ -33,12 +53,26 @@ class SessionsController < ApplicationController
     session[:oauth_token_secret] = @auth.credentials.secret
     session[:screen_name] = @auth["info"]["nickname"]
 
+    @user=User.find_by_email(session[:email])
+    #@user.update_attributes!(oauth_token: session[:oauth_token], oauth_token_secret: session[:oauth_token_secret], twitterName: session[:screen_name])
+   # return @user
+
+    @user.oauth_token = session[:oauth_token]
+    @user.oauth_token_secret = session[:oauth_token_secret]
+    @user.twitterName = session[:screen_name]
+    @user.save!
+    
+    @changedUser=User.find_by_email(session[:email])
+    #return @changedUser
+
   Twitter.configure do |config|
     config.consumer_key = 'h0MgV3Rzrr9nxFthM1THA'
     config.consumer_secret = '75Wj9bVDJrKz2Y74MFgQzi6QgHXgXFPJs7A0wPq1nU'
     config.oauth_token = @auth.credentials.token
     config.oauth_token_secret = @auth.credentials.secret
   end
+
+    #@current_user = @user
     
 
 

@@ -3,7 +3,7 @@ require 'bcrypt'
 class User < ActiveRecord::Base
   include BCrypt
 
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :oauth_token, :oauth_token_secret, :twitterName
   has_secure_password
   before_save{|user| user.email = user.email.downcase}
   before_save :create_session_token
@@ -11,21 +11,16 @@ class User < ActiveRecord::Base
   validates :name, presence: true, length: {maximum: 50}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: 6}
-  validates :password_confirmation, presence: true
+  validates :password, presence: true, length: {minimum: 6}, :if => :password_present?
+  validates :password_confirmation, presence: true, :if => :password_present?
 
-<<<<<<< HEAD
-  
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
   private
     def create_session_token
       self.session_token=SecureRandom.urlsafe_base64
     end
-<<<<<<< HEAD
 
-  
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
-  
+  def password_present?
+    !password.nil?
+  end
+
 end
