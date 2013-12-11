@@ -1,30 +1,31 @@
 # Completed step definitions for basic features: Login, Links, Tweets and Retweets
 
-#Given /^I have logged in with email "(.*?)" and password "(.*?)"$/ do |email, pwd|
-#  visit login_path
-#  fill_in ('session[email]',  :with=> email)
-#  fill_in('session[password]', :with=> pwd)
-#  
-#  click_on "Sign in"
+Given /^I have logged in with email "(.*?)" and password "(.*?)"$/ do |email, pwd|
+  visit login_path
+  fill_in "session[email]",  :with=> email
+  fill_in "session[password]", :with=> pwd
   
-#  assert true
-#end
+ # 
+  click_on "Sign in"
+ # 
+  
+end
 
- When /^I am on the Team Awesome Twitter App home page$/ do
-   visit streams_path
+ When /^I am on the TeamAwesome homepage$/ do
+   visit '/streams'
  end
 
  Then /^I should see all my tweets$/ do
-   
-#   all("td #id").each do |tr|
-#    if !tr.has_content?
-#      assert false
-#      break
-#    end
-#  end  
-#  assert true
-# end
+   ans = false
+   all("tr .class").each do |tr|
+    if !tr.has_content?
+      assert ans
+      break
+    end
+  end  
+  assert true
  end
+
 
  When /^I click on Logout$/ do
    click_on "Logout"
@@ -35,7 +36,8 @@
  end
 
  When /^I click on Twitter$/ do
-   click_on "Twitter"
+   visit streams_path
+   click_link('Twitter')
  end 
  Then /^I should be taken to Twitter home page$/ do
    visit "http://www.twitter.com"
@@ -62,12 +64,29 @@
  end
  
  Then /^I should see all of my retweets$/ do
-#     all("td #id").each do |tr|
-#       if !(tr.has_content?)
-#       assert false
-#       break
-#       end
-#     end  
-#   assert true
-# end
+     all("td #id").each do |tr|
+       if !(tr.has_content?)
+       assert false
+       break
+       end
+     end  
+   assert true
  end
+
+
+ When /^I click on Nice Tweets$/ do
+      click_on "Nice Tweets"
+ end
+ 
+ Then /^I should all nice tweets$/ do
+      visit nfeatures_path
+      all("td #id").each do |tr|
+       if !(tr.has_content?)
+       assert false
+       break
+       end
+     end  
+   assert true
+ end
+
+
