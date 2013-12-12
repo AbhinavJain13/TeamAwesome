@@ -34,10 +34,6 @@ describe SessionsController do
         @user.should_receive(:authenticate).with('passwordFake').and_return(true)
         @user.stub(:session_token)
         #response.should == 302
-<<<<<<< HEAD
-
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
         #response.body.should include "/streams"
       #flash.now[:warning].should == 'asdasd'
         post :create, {:session => {:email => 'email@address.com', :password=>'passwordFake'}}
@@ -71,7 +67,6 @@ describe SessionsController do
         assigns[@current_user].should == nil
         delete :destroy
       end
-<<<<<<< HEAD
       it 'display flash message indusericating logout' do
         assigns[flash[:notice]].should == 'You have logged out'
         delete :destroy
@@ -105,12 +100,4 @@ describe SessionsController do
       end
       
     end
-=======
-      it 'display flash message indicating logout' do
-        assigns[flash[:notice]].should == 'You have logged out'
-        delete :destroy
-      end
-    end
-  end
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
 end
