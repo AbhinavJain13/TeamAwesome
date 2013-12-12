@@ -22,15 +22,16 @@
 
     =label :session, :password, 'Password'
     =password_field :session, 'password'
+
     %br
+
+    Log in as a different twitter account than last login:
+    %input{name: "twitterChange", style: "padding: 3px", type: "checkbox"}/
+    
+    %br
+
     =submit_tag 'Sign in'
 
   =link_to 'Create new account', new_user_path
 
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> b401e8222031a8d2dfa3e3b13e3c586172619164
     

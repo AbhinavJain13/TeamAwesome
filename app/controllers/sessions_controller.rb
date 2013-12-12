@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+
     user=User.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       #sign in and redirect to show page
@@ -13,8 +14,10 @@ class SessionsController < ApplicationController
       #return @test_user
       @current_user = user
       session[:email] = params[:session][:email]
-
-      if @current_user.oauth_token != nil
+      
+      if params[:twitterChange] == "on"
+        redirect_to '/auth/twitter'
+      elsif @current_user.oauth_token != nil
 
         session[:oauth_token] = @current_user.oauth_token
         session[:oauth_token_secret] = @current_user.oauth_token_secret
