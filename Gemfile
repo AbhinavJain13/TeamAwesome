@@ -6,6 +6,7 @@ gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'twitter-text'
 gem 'jquery-ui-rails'
+gem 'omniauth-twitter'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -16,7 +17,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
-  gem 'omniauth-twitter'
   gem 'omniauth-github'
 end
 group :test do
