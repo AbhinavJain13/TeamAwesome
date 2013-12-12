@@ -2,7 +2,7 @@ Feature: Links from Team Awesome Home Page
   
 Background:
   Given I have logged in with email "jayant-parchure@uiowa.edu" and password "jayantp"
-  And I am on the TeamAwesome homepage
+  And I am on the Team Awesome Twitter App home page
   
 Scenario: Twitter Link
   When I click on Twitter
