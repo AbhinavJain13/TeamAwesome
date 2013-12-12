@@ -72,8 +72,7 @@ float:right;
           <li><%= link_to "Authored Tweets", compose_tweets_path %></li>
           <li><%= link_to "Follow Back", follow_back_path %></li>
           <li><%= link_to "Popular Hashtags", popular_hashtags_path %></li>
-          <li><%= link_to "Home", streams_path %></li>
-          <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
+
 	  
           <li></li>
           
@@ -86,7 +85,7 @@ You can drop us a mail at: <br>
 	teamawesomeselt@gmail.com<br>
 	Click <a href="http://www.twitter.com/teamawesomeselt"> here </a> to check out our tweets
 	Go Team Awesome!</p>
-	<%end%>
+	<% end %>
       </div>
     </div>
   </div>
