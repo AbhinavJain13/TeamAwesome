@@ -40,6 +40,7 @@ end
 
 # to get popular tweets
 def popular
+    redirect_to "http://www.fb.com"
     @current_twitter_user = Twitter.user 
     @my_timeline=Twitter.user_timeline(@current_twitter_user.screen_name, :count => 200)
     @myhash = Hash.new(0)
