@@ -6,8 +6,8 @@
 <h2>Details about us </h2>
 <body>
 
-<strong>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
-Here is your twitter stream- </strong>
+<strong>Hello <%= @current_user.name %>, these are all the tweets that you and your friends found nice!  
+</strong>
 <br>
 <table class="table" border =2>
   <% @stream.each_with_index do |tweet,i|%>

@@ -14,7 +14,7 @@ end
 def index
   @current_twitter_user = Twitter.user
   @output = Nfeature.get_nice
-  @stream = @output[:tweets]
+  @stream = []#@output[:tweets]
   @uname = @output[:uname]
 end
 # used to show all notes

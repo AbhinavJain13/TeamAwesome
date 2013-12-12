@@ -50,10 +50,26 @@ $(reply.setup);
 
 <%= javascript_include_tag('application') %>
 
-<h2>Details about us </h2>
+<h2>Welcome <%= @current_user.name %> </h2>
 <body>
 
-<strong>Hello Everybody, this is with  our awesome twitter app Thanks for visiting by!  
+<strong><script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12 && time >4) 
+      {
+      document.write("Good morning!");
+      }
+    if (time > 12 && time < 16) 
+      {
+      document.write("Good afternoon!");
+      }
+    else
+      {
+      document.write("Good evening");
+      }
+    </script>, We hope you find our awesome Twitter app useful. Thanks for visiting by!  
 Here is your twitter stream- </strong>
 <br>
 <table class="table" border =2>
