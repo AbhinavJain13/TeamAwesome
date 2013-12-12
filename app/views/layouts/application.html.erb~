@@ -9,7 +9,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 <style>
-.nav {
+#functions{
 position:fixed;
 top:180px;
 width:100%;
@@ -34,11 +34,20 @@ float:right;
       <div class="nav-collapse" align="right" id="compose_tweet"><%= link_to image_tag("compose.jpg", :alt => "Compose Tweet", :size => "40x40"), new_compose_tweet_path, :method=>:get, :html=>{:id=>"compose_tweet_trigger"} %></div>
       <div class="nav-collapse">
 
-      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user.name %></a>
+      <a class="brand" href="http://www.twitter.com/<%= @current_twitter_user %>" + ><%= @current_twitter_user.name %> (<%= @current_user.name %>)</a>
 	
         
 	
-	<span align="center">Welcome, <%= @current_user.name %> </span>
+	
+	<ul class ="nav" >
+
+
+          <li><%= link_to "Home", streams_path %></li>
+          <li><%= link_to 'Logout', logout_path, :method=>:delete %></li>
+	  
+    
+          
+        </ul>
       </div>
     </div>
   </div>
@@ -49,6 +58,7 @@ float:right;
     <div class="row">
       <div class="span9"><%= yield %></div>
       <div class="span3">
+	<% if !!@current_user %>
 	<ul class="nav nav-tabs nav-stacked" id="functions">
 
           <li class="header"><%= link_to "Twitter", "http://www.twitter.com" %></li>
@@ -68,12 +78,15 @@ float:right;
           <li></li>
           
         </ul>
-       <!-- <h2>About Us</h2>
+	<%  %>
+	<% else %>
+       <h2>About Us</h2>
         <p>We are a group of 4 graduate students, from Dept of Informatics and Computer Science Dept who are (needless to say) Awesome. We are making making this twitter app as a part of our project for Software Engineering Languages and Tools course for Fall 2013. Let us know if you like it.<br>
 You can drop us a mail at: <br>
 	teamawesomeselt@gmail.com<br>
-	Click on the Team Awesome Banner at the top to check out our tweets
-	Go Team Awesome!</p>!-->
+	Click <a href="http://www.twitter.com/teamawesomeselt"> here </a> to check out our tweets
+	Go Team Awesome!</p>
+	<%end%>
       </div>
     </div>
   </div>

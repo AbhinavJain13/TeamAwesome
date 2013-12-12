@@ -58,6 +58,7 @@ float:right;
     <div class="row">
       <div class="span9"><%= yield %></div>
       <div class="span3">
+	<% if !!@current_user %>
 	<ul class="nav nav-tabs nav-stacked" id="functions">
 
           <li class="header"><%= link_to "Twitter", "http://www.twitter.com" %></li>
@@ -77,12 +78,15 @@ float:right;
           <li></li>
           
         </ul>
-       <!-- <h2>About Us</h2>
+	<%  %>
+	<% else %>
+       <h2>About Us</h2>
         <p>We are a group of 4 graduate students, from Dept of Informatics and Computer Science Dept who are (needless to say) Awesome. We are making making this twitter app as a part of our project for Software Engineering Languages and Tools course for Fall 2013. Let us know if you like it.<br>
 You can drop us a mail at: <br>
 	teamawesomeselt@gmail.com<br>
-	Click on the Team Awesome Banner at the top to check out our tweets
-	Go Team Awesome!</p>!-->
+	Click <a href="http://www.twitter.com/teamawesomeselt"> here </a> to check out our tweets
+	Go Team Awesome!</p>
+	<% end %>
       </div>
     </div>
   </div>
