@@ -20,7 +20,7 @@ group :development, :test do
   gem 'omniauth-github'
 end
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'capybara'
   gem 'launchy'
@@ -31,10 +31,6 @@ group :test do
 end
 group :production do
   gem 'pg'
-end
-group :test do
-  gem 'cucumber-rails'
-  gem 'cucumber-rails-training-wheels'
 end
 
 # Gems used only for assets and not required

@@ -37,10 +37,6 @@ end
 
 Given /^I am an authenticated Twitter user$/ do
   visit oauth/twitter
-#  @user.oauth_token = "123"
-#  @user.oauth_token_secret = "Bar"
-#  @user.twitterName = "fooman"
-#  @user.save!
 end
 
 Given /^I am an authenticated user$/ do

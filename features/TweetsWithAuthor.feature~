@@ -5,7 +5,7 @@ Feature: View tweets from my Twitter account with their authors
   I want to view tweets from my Twitter account with their authors
 
 Scenario: View tweets from my account with their authors 
-  Given I am an authorized user
+  Given I am an authenticated user
   And I am on the TeamAwesome homepage
   When I follow "Authored Tweets"
   Then I should see tweets with authors
