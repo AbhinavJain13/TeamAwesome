@@ -85,11 +85,9 @@ Here is your twitter stream- </strong>
       
           <tr class="basicFunctions">
            <td></td>
-           <td><span class="replies"><a href="#"><%= image_tag("reply.png", :alt => "Reply") %>Reply</a></span>
-            <%= image_tag("favorite.png", :alt => "Favorite") %>Favorite
-            <%= image_tag("retweet.png", :alt => "Retweet") %>Retweet
-            <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
-            <span class="note" ><a href="nfeatures/show" class=""><%= image_tag("addnote.png", :alt => "Add Note", :size => "16x16") %>Add Note</a></span>
+           <td><span class="replies"><a href="#">Reply</a></span>Favorite Retweet
+            <span class="nice" id="<%= tweet.id %>"><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
+            <span class="note" ><a href="nfeatures/show" class="">Add Note</a></span>
            </td>
           </tr>
         </table>

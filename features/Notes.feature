@@ -1,0 +1,20 @@
+Feature: Add note to an individaul tweet
+    
+        As a twitter user for marketing
+	So that I can keep track of ways in which I intend to follow up
+	I want to leave notes for my self that will appear when I login next time  
+
+
+Background: I have logged in with email "green@email.com" and password "greengreen"
+
+
+Scenario: Add note to tweet
+  Given I am on the TeamAwesome homepage
+  When I click on Add Note
+  Then I should be on page where I can add note
+
+
+Scenario: See added notes
+  Given I am on the TeamAwesome homepage
+  When I click on Note
+  Then I should see all notes 

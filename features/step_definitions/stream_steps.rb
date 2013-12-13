@@ -89,4 +89,29 @@ end
    assert true
  end
 
+#NHP
+
+When /^I click on Add Note$/ do
+     click_on "Add Note"
+end
+
+Then /^I should be on page where I can add note$/ do
+     visit "nfeatures/show"        
+end 
+
+When /^I click on Note$/ do
+     click_on "Note"
+end
+
+Then /^I should see all notes$/do
+     visit "nfeatures/note"
+end   
+
+When /^I click on Popular Tweets$/do
+     click_on "Popular Tweets"    
+end
+ 
+Then /^I should see all of my Popular tweets$/do
+     visit "nfeatures/popular"
+end
 
