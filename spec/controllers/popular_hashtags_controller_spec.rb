@@ -4,7 +4,7 @@ describe PopularHashtagsController do
 
   before :each do
     @current_user = double()
-    User.stub(:find_by_session_token).and_return(@current_user)
+    User.stub(:find_by_email).and_return(@current_user)
     @tweet1 = double()
     @tweet2 = double()
     @tweet3 = double()

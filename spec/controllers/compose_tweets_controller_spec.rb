@@ -4,7 +4,7 @@ describe ComposeTweetsController do
 
   before :each do
    @current_user = double()
-   User.stub(:find_by_session_token).and_return(@current_user)
+   User.stub(:find_by_email).and_return(@current_user)
   end
 
   describe 'adding compose tweet' do
