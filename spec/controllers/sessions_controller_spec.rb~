@@ -34,6 +34,7 @@ describe SessionsController do
         @user.should_receive(:authenticate).with('passwordFake').and_return(true)
         @user.stub(:session_token)
         #response.should == 302
+        end #NHP
 <<<<<<< HEAD
 
 =======
@@ -65,13 +66,13 @@ describe SessionsController do
     describe 'session destroy invoked' do
       it 'session token should be cleared' do
         assigns[session[:session_token]].should == nil
-<<<<<<< HEAD
         delete :destroy
       end
       it 'current user should be set to nil' do 
         assigns[@current_user].should == nil
         delete :destroy
       end
+<<<<<<< HEAD
       it 'display flash message indusericating logout' do
         assigns[flash[:notice]].should == 'You have logged out'
         delete :destroy
@@ -96,7 +97,7 @@ describe SessionsController do
   end
    describe 'twitter session destroyed' do
       it 'session screen name should be set to nil' do
-         assigns[session[:screen_name]].should == 'asd'
+         assigns[session[:screen_name]].should == nil
          get :twitter_destroy
       end
       it 'should redirect to login' do
@@ -106,15 +107,9 @@ describe SessionsController do
       
     end
 =======
-        delete :session
-      end
-      it 'current user should be set to nil' do 
-        assigns[@current_user].should == nil
-        delete :session
-      end
       it 'display flash message indicating logout' do
         assigns[flash[:notice]].should == 'You have logged out'
-        delete :session
+        delete :destroy
       end
     end
   end

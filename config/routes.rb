@@ -7,7 +7,7 @@ TeamAwesome::Application.routes.draw do
   match '/signup', to: 'users#new'
   match '/login', to: 'sessions#new'
   match '/logout', to: 'sessions#destroy', via: :delete
-  resources :nfeatures
+  #resources :nfeatures
   match '/follow_back', to: 'follow_back#index'
   resources :nfeatures do
    collection do

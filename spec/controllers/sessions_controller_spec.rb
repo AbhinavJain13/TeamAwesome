@@ -17,6 +17,7 @@ describe SessionsController do
       post :create, {:session => {:email => 'email@address.com', :password=>'passwordFake'}}
       
     end
+   end # NHP
     describe 'correct name/password combination' do
       it 'should assign session token' do
         @user = double('User')
@@ -34,6 +35,7 @@ describe SessionsController do
         @user.should_receive(:authenticate).with('passwordFake').and_return(true)
         @user.stub(:session_token)
         #response.should == 302
+        #NHP
 <<<<<<< HEAD
 
 =======
