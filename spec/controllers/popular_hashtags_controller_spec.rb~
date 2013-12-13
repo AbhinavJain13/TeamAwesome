@@ -37,8 +37,8 @@ describe PopularHashtagsController do
       my_hashtags = [["#cats", [@tweet1, @tweet2, @tweet3]], ["#dogs", [@tweet2, @tweet3]], ["#cows", [@tweet1]]]
       controller.should_receive(:get_hashtags)
       controller.instance_variable_set(:@hashtags, my_hashtags)
-      get :show, '#dogs'
-      assigns(:tag).should == '#dogs'
+      get :show, {:id=>"#dogs"}
+      assigns(:tag).should == "#dogs"
       assigns(:tweets).should == [@tweet2, @tweet3]
     end
   end
