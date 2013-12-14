@@ -47,5 +47,17 @@ describe NfeaturesController do
 	end 
 
   end
+   describe 'set nice tweets' do
+    it 'should mark a tweet as nice' do
+      Nfeature.should_receive(:set_nice).with('fake_id', 'fake_name').and_return(@twitter_obj)
+      post :create, @valid_input
+    end
+  end
+  describe 'show nice tweets' do
+    it 'should show nice tweets' do
+      Twitter.should_receive(:retweets_of_me).and_return(@twitter_obj)
+      get :index
+    end
+  end
  
 end
