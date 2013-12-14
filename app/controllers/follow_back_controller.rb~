@@ -11,7 +11,7 @@ class FollowBackController < ApplicationController
 
     @followers, @followerRateError = FollowBack.get_twitter_followers_with_cursor(-1,[])
 
-    return
+    
     @followerArray = Array.new
 
     @followers.each do |follower|

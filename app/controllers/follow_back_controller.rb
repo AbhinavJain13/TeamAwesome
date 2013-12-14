@@ -29,11 +29,11 @@ class FollowBackController < ApplicationController
     @results = @followingArray - @followerArray #set difference
     if @results == []
       #Approximately
-      if ((@followingArray = [] and @followingRateError == true) or (@followerArray = [] and @followerRateError == true))
+      if ((@followingArray == [] and @followingRateError == true) or (@followerArray == [] and @followerRateError == true))
         flash[:notice] = "You have exceeded the rate limit Twitter imposes.  You will need to wait as much as 15 minutes before trying to load this page again."
-      elsif (@followerArray = [])
+      elsif (@followerArray == [])
         flash[:notice] = "No one follows you!"
-      elsif (@followingArray = [])
+      elsif (@followingArray == [])
         flash[:notice] = "You don't follow anyone!"
       else
         flash[:notice] = "Everyone you follow follows you!"
