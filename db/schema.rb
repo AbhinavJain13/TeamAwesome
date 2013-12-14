@@ -11,9 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131208213640) do
+ActiveRecord::Schema.define(:version => 20131214035630) do
 
   create_table "compose_tweets", :force => true do |t|
+    t.string "tid",    :null => false
     t.string "author"
     t.string "text"
   end

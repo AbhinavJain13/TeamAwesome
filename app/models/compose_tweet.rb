@@ -8,5 +8,4 @@ class ComposeTweet < ActiveRecord::Base
     ComposeTweet.create(:tid=>id, :text=>text, :author=>author)
   end
 
-  def 
 end
