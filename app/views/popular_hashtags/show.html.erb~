@@ -9,9 +9,7 @@
   </tr>
   <tr class="basicFunctions">
     <td></td>
-    <td><span class="replies"><a href="#">Reply</a></span>
-   Favorite
-    Retweet
+    <td><span class="replies"><a href="#">Reply</a></span> Favorite Retweet
     <span class="nice" id="<%= tweet.id %>"><%= image_tag("nice.png", :alt => "Retweet", :size => "16x16") %><%= link_to 'Nice', nfeatures_path(:tweetid=> tweet.id), :method=> :post %></span>
     </td>
   </tr>
