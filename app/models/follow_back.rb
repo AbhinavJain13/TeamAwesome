@@ -1,16 +1,17 @@
 class FollowBack < ActiveRecord::Base
 	
   def self.get_twitter_friends_with_cursor(cursor, list)
+
     begin
       if cursor == 0
-        return list
+        return list, false
       else
         hash = Twitter.friends(:cursor => cursor)                      
         hash.users.each {|u| list << u }                              
         get_twitter_friends_with_cursor(hash.next_cursor,list) 
       end
     rescue Twitter::Error::TooManyRequests => error
-        return list
+        return list, true
     
     end
   end
@@ -18,15 +19,14 @@ class FollowBack < ActiveRecord::Base
  def self.get_twitter_followers_with_cursor(cursor, list)
     begin
       if cursor == 0
-        return list
+        return list, false
       else
         hash = Twitter.followers(:cursor => cursor)                      
         hash.users.each {|u| list << u }                              
         get_twitter_followers_with_cursor(hash.next_cursor,list) 
       end
     rescue Twitter::Error::TooManyRequests => error
-        return list
-    
+        return list, true    
     end
   end
 end
