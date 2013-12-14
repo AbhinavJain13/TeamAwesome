@@ -6,15 +6,18 @@
 <br><br><br>
 /@results.inspect
 
+@followers.inspect
+@followerRateError.inspect
+
 - if flash[:notice]
   #notice.message= flash[:notice]
 <br>
-%table#followers
-  %thead
-    %th{ :style => "align: left;" } actual_name
-    %th{ :style => "align: left;" } screen_name
-  %tbody
-    - if !flash[:notice]
+- if !flash[:notice]
+  %table#followers
+    %thead
+      %th{ :style => "align: left;" } actual_name
+      %th{ :style => "align: left;" } screen_name
+    %tbody
       - @results.each do |result|
         %tr
           %td{ :style => "padding: 5px;" }= result[0]
