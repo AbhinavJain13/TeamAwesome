@@ -4,7 +4,7 @@ Feature: view all the tweets associated with an account that have been retweeted
 	So that I can assess impact of my tweets
 	I want to be able to see my Tweets that have been retweeted
 
-Background: I have logged in
+Background: I have logged in with email "green@email.com" and password "greengreen"
 
 Scenario: view all retweets associated with my account
   Given I am on the TeamAwesome homepage
