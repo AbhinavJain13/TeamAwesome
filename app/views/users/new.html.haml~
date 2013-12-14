@@ -18,6 +18,6 @@
   =text_field :user, 'password'
   =label :user, :password_confirmation, 'Confirm Password'
   =password_field :user, 'password_confirmation'
-
+  %br
   =submit_tag 'Create my account'
 
