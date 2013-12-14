@@ -1,5 +1,5 @@
 class ComposeTweet < ActiveRecord::Base
-  attr_accessible :id, :text, :author
+  attr_accessible :tid, :text, :author
   
   def self.create_compose_tweet (id, text, author)
     if id.is_a? Integer
@@ -7,4 +7,6 @@ class ComposeTweet < ActiveRecord::Base
     end
     ComposeTweet.create(:tid=>id, :text=>text, :author=>author)
   end
+
+  def 
 end

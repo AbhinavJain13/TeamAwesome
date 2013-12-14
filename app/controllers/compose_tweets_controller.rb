@@ -21,7 +21,6 @@ before_filter :set_current_user
 
   def index
     @current_twitter_user = Twitter.user
-    #retrieve the first 50 tweets sent from the user's twitter account
     @timeline = Twitter.user_timeline(@current_twitter_user.screen_name).take(50)
     @compose_tweet = ComposeTweet.all
     @author = "?"
