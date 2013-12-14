@@ -7,7 +7,7 @@
       <td><img src = " <%= tweet.user.profile_image_url %> " /></td>
       <td><%= auto_link(tweet.full_text).html_safe %></td>
       <% @compose_tweet.each do |compose| %>
-        <% if (compose.tid == tweet.id) %>
+        <% if (compose.tid == tweet.id.to_s) %>
           <% @author=compose.author %>
         <% end %>
       <% end %>
