@@ -33,8 +33,8 @@ describe FollowBackController do
       #@fakeResult.stub(:each).and_return([])
       Twitter.should_receive(:user)
       #Twitter.stub(:home_timeline).and_return(@timeline) 
-      @test = []
-      FollowBack.stub(:get_twitter_friends_with_cursor).and_return(@test)
+      @test = Array.new()
+      FollowBack.stub(:get_twitter_friends_with_cursor).and_return([[]])
       FollowBack.stub(:get_twitter_followers_with_cursor).and_return([[@user2]])
       get :index
       assigns(flash[:notice]).should = "You don't follow anyone!"
