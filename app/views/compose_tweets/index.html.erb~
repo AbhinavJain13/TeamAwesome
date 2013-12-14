@@ -11,7 +11,7 @@
           <% @author=compose.author %>
         <% end %>
       <% end %>
-      <td><%= @author %></td>
+      <td>Author: <%= @author %></td>
       <% @author="?" %>
   </tr>
 <% end %>
