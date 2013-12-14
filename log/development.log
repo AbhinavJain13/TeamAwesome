@@ -6957,3 +6957,16 @@ Connecting to database specified by database.yml
   [1m[36m (4.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131105221421')[0m
   [1m[35m (4.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131118220712')
 
+Connecting to database specified by database.yml
+  [1m[36m (13.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUser (20131105220741)
+Migrating to AddIndexToUsersEmail (20131105221421)
+Migrating to AddSessionTokenToUsers (20131105224218)
+Migrating to ThirdPartyAuth (20131118220712)
+Migrating to CreateComposeTweets (20131119013204)
+Migrating to TwitterName (20131119235953)
+Migrating to DifferentFeatures (20131121232723)
+Migrating to NewFeatures (20131121234050)
+Migrating to MoreTwitterAttribsInUserModel (20131208213640)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
