@@ -11,7 +11,8 @@ before_filter :set_current_user
     @tweet_text = params[:compose_tweet][:text]
     if @tweet_text.length > 0 
       @tweet = Twitter.update(params[:compose_tweet][:text])
-      ComposeTweet.create_compose_tweet(@tweet.id, @tweet.text, @current_user.name)
+      id = @tweet.id.to_s
+      ComposeTweet.create_compose_tweet(id, @tweet.text, @current_user.name)
       redirect_to streams_path 
     else 
       flash[:notice] = 'Please compose a tweet between 1 and 140 characters'

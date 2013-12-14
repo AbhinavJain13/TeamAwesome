@@ -11131,3 +11131,4 @@ Migrating to NewFeatures (20131121234050)
 Migrating to MoreTwitterAttribsInUserModel (20131208213640)
   [1m[35m (0.1ms)[0m  select sqlite_version(*)
   [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
