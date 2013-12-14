@@ -5,6 +5,6 @@ class ComposeTweet < ActiveRecord::Base
     if id.is_a? Integer
       id = id.to_s
     end
-    ComposeTweet.create(:id=>id, :text=>text, :author=>author)
+    ComposeTweet.create(:tid=>id, :text=>text, :author=>author)
   end
 end
