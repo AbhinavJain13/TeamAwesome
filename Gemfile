@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '4.0.0'
 gem 'twitter'
 gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
@@ -20,8 +20,8 @@ group :development, :test do
   gem 'omniauth-github'
 end
 group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
+  gem 'cucumber-rails', '>= 1.4.0', :require => false
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'
@@ -42,7 +42,7 @@ group :assets do
   gem "therubyracer"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'twitter-bootstrap-rails'
+  gem 'twitter-bootstrap-rails', '>= 2.2.8'
   gem 'uglifier', '>= 1.0.3'
 end
 
