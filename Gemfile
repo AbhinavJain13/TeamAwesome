@@ -6,7 +6,7 @@ gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'twitter-text'
 gem 'jquery-ui-rails'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '>= 1.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
