@@ -13,7 +13,7 @@ gem 'omniauth-twitter'
 group :development, :test do
   gem 'sqlite3'
   gem 'capybara'
-  gem 'launchy'
+  gem 'launchy', '>= 2.3.0', '>= 2.3.0'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
