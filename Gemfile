@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '5.2.8.1'
 gem 'twitter'
 gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
