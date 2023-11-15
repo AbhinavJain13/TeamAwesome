@@ -12,7 +12,7 @@ gem 'omniauth-twitter'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'capybara'
+  gem 'capybara', '>= 2.2.0', '>= 2.2.0'
   gem 'launchy'
   gem 'rspec-rails'
   gem 'database_cleaner'
@@ -20,7 +20,7 @@ group :development, :test do
   gem 'omniauth-github'
 end
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.1', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'capybara'
   gem 'launchy'
