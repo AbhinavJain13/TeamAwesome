@@ -20,7 +20,7 @@ group :development, :test do
   gem 'omniauth-github'
 end
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 3.0.0', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'capybara'
   gem 'launchy'
