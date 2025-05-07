@@ -14,7 +14,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'capybara'
   gem 'launchy'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0', '>= 8.0.0'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
   gem 'omniauth-github'
