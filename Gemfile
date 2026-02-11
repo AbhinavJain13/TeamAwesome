@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'twitter'
+gem 'twitter', '>= 6.2.0'
 gem "haml", '4.0.3'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'twitter-text'
@@ -17,7 +17,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
-  gem 'omniauth-github'
+  gem 'omniauth-github', '>= 1.1.2'
 end
 group :test do
   gem 'cucumber-rails', :require => false
